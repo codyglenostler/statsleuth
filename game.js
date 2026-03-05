@@ -4,7 +4,7 @@
 
 function initGame(sport, config) {
   const MAX_GUESSES = 5;
-  const STORAGE_KEY = `statsleuth_${sport}_${getTodayKey()}`;
+  const STORAGE_KEY = `statsleuth_v2_${sport}_${getTodayKey()}`;
 
   // ── Load saved state ──
   let state = loadState();
