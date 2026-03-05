@@ -527,8 +527,8 @@ const STATSLEUTH_CONFIG = {
     answer: "Christian Wood",
     clues: [
       { label: "Year", value: "2022-2023" },
-      { label: "PRA Average (Pts / Reb / Ast)", value: "25.76" },
       { label: "Draft Year / Position", value: "2015 / PF" },
+      { label: "Season PPG", value: "16.6" },
       { label: "Conference", value: "Western" },
       { label: "Team", value: "Dallas Mavericks" }
     ],
@@ -907,8 +907,8 @@ const STATSLEUTH_CONFIG = {
     answer: "Ezekiel Elliott",
     clues: [
       { label: "Year", value: "2022" },
-      { label: "Draft Year", value: "2016" },
-      { label: "Position", value: "Running Back" },
+      { label: "Draft Year / Position", value: "2016 / RB" },
+      { label: "Rushing Yards", value: "876" },
       { label: "Conference", value: "NFC" },
       { label: "Team", value: "Dallas Cowboys" }
     ],
