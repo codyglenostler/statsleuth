@@ -6,13 +6,13 @@
 const STATSLEUTH_CONFIG = {
 
   mlb: {
-    answer: "Mike Trout",
+    answer: "Freddie Freeman",
     clues: [
-      { label: "Year", value: "2019" },
-      { label: "Batting Average", value: ".291" },
-      { label: "Position / Throws", value: "CF / Right" },
-      { label: "League", value: "American League" },
-      { label: "Team", value: "Los Angeles Angels" }
+      { label: "Year", value: "2020" },
+      { label: "Batting Average", value: ".341" },
+      { label: "Position / Throws", value: "1B / Right" },
+      { label: "League", value: "National League" },
+      { label: "Team", value: "Atlanta Braves" }
     ],
     players: [
       "Mike Trout", "Shohei Ohtani", "Mookie Betts", "Freddie Freeman",
@@ -45,13 +45,13 @@ const STATSLEUTH_CONFIG = {
   },
 
   nba: {
-    answer: "LeBron James",
+    answer: "Nikola Jokić",
     clues: [
-      { label: "Year", value: "2020" },
-      { label: "PRA Average", value: "25.3 / 7.8 / 10.2" },
-      { label: "Draft Year / Position", value: "2003 / SF" },
+      { label: "Year", value: "2022" },
+      { label: "PRA Average (Pts / Reb / Ast)", value: "27.1 / 13.8 / 7.9" },
+      { label: "Draft Year / Position", value: "2014 / C" },
       { label: "Conference", value: "Western" },
-      { label: "Team", value: "Los Angeles Lakers" }
+      { label: "Team", value: "Denver Nuggets" }
     ],
     players: [
       "LeBron James", "Stephen Curry", "Kevin Durant", "Giannis Antetokounmpo",
@@ -83,13 +83,13 @@ const STATSLEUTH_CONFIG = {
   },
 
   nfl: {
-    answer: "Patrick Mahomes",
+    answer: "Justin Jefferson",
     clues: [
       { label: "Year", value: "2022" },
-      { label: "Draft Year", value: "2017" },
-      { label: "Position", value: "Quarterback" },
-      { label: "Conference", value: "AFC" },
-      { label: "Team", value: "Kansas City Chiefs" }
+      { label: "Draft Year", value: "2020" },
+      { label: "Position", value: "Wide Receiver" },
+      { label: "Conference", value: "NFC" },
+      { label: "Team", value: "Minnesota Vikings" }
     ],
     players: [
       "Patrick Mahomes", "Josh Allen", "Joe Burrow", "Lamar Jackson",
