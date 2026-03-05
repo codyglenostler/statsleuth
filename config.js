@@ -12,7 +12,7 @@ const STATSLEUTH_CONFIG = {
       { label: "Batting Average", value: ".266" },
       { label: "Position / Throws", value: "(1B/DH) / Right" },
       { label: "League", value: "National League" },
-      { label: "Team", value: "San Diego Padres/Washington Nationals" }
+      { label: "Team", value: "SD Padres/Washington Nationals" }
     ],
     players: [
       "Aaron Judge",
