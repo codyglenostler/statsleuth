@@ -309,6 +309,21 @@ main {
 
 .clue-content { flex: 1; min-width: 0; }
 
+.sports-card { counter-reset: clue-counter; }
+
+.clue-content::before {
+  counter-increment: clue-counter;
+  content: "CLUE #" counter(clue-counter);
+  display: block;
+  text-align: center;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  font-family: 'DM Mono', monospace;
+  margin-bottom: 3px;
+}
+
 .clue-label {
   font-size: 10px;
   font-weight: 600;
