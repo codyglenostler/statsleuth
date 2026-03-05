@@ -179,7 +179,7 @@ function initGame(sport, config) {
 
   // ────────────────────────────────────────────
   function revealNextClue() {
-    const idx = state.wrongGuesses.length - 1;
+    const idx = state.wrongGuesses.length; // offset by 1 since clue 0 is pre-shown
     if (idx < clueRows.length) {
       setTimeout(() => {
         clueRows[idx].classList.add('revealed');
@@ -266,8 +266,12 @@ function initGame(sport, config) {
     if (!state) {
       state = { wrongGuesses: [], result: null, guessesUsed: 0, locked: false };
       saveState();
+      clueRows[0].classList.add('revealed');
       return;
     }
+
+    // Always show first clue
+    clueRows[0].classList.add('revealed');
 
     // Restore wrong guesses
     state.wrongGuesses.forEach((name, i) => {
