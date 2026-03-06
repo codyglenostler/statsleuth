@@ -118,71 +118,56 @@
 
       <!-- Clue Row 1 -->
       <div class="clue-row" id="clue-0">
-        <div class="clue-row-locked">
-          <div class="lock-dots"><span></span><span></span><span></span></div>
-        </div>
         <div class="clue-row-inner">
-          <div class="clue-number">1</div>
-          <div class="clue-content">
-            <div class="clue-label">Season</div>
-            <div class="clue-value" id="clue-val-0"></div>
+          <div class="clue-num-col">
+            <div class="clue-tag">CLUE</div>
+            <div class="clue-num-circle">1</div>
           </div>
+          <div class="clue-value" id="clue-val-0"></div>
         </div>
       </div>
 
       <!-- Clue Row 2 -->
       <div class="clue-row" id="clue-1">
-        <div class="clue-row-locked">
-          <div class="lock-dots"><span></span><span></span><span></span></div>
-        </div>
         <div class="clue-row-inner">
-          <div class="clue-number">2</div>
-          <div class="clue-content">
-            <div class="clue-label">Batting Average</div>
-            <div class="clue-value" id="clue-val-1"></div>
+          <div class="clue-num-col">
+            <div class="clue-tag">CLUE</div>
+            <div class="clue-num-circle">2</div>
           </div>
+          <div class="clue-value" id="clue-val-1"></div>
         </div>
       </div>
 
       <!-- Clue Row 3 -->
       <div class="clue-row" id="clue-2">
-        <div class="clue-row-locked">
-          <div class="lock-dots"><span></span><span></span><span></span></div>
-        </div>
         <div class="clue-row-inner">
-          <div class="clue-number">3</div>
-          <div class="clue-content">
-            <div class="clue-label">Position / Throws</div>
-            <div class="clue-value" id="clue-val-2"></div>
+          <div class="clue-num-col">
+            <div class="clue-tag">CLUE</div>
+            <div class="clue-num-circle">3</div>
           </div>
+          <div class="clue-value" id="clue-val-2"></div>
         </div>
       </div>
 
       <!-- Clue Row 4 -->
       <div class="clue-row" id="clue-3">
-        <div class="clue-row-locked">
-          <div class="lock-dots"><span></span><span></span><span></span></div>
-        </div>
         <div class="clue-row-inner">
-          <div class="clue-number">4</div>
-          <div class="clue-content">
-            <div class="clue-label">League</div>
-            <div class="clue-value" id="clue-val-3"></div>
+          <div class="clue-num-col">
+            <div class="clue-tag">CLUE</div>
+            <div class="clue-num-circle">4</div>
           </div>
+          <div class="clue-value" id="clue-val-3"></div>
         </div>
       </div>
 
       <!-- Clue Row 5 -->
       <div class="clue-row" id="clue-4">
-        <div class="clue-row-locked">
-          <div class="lock-dots"><span></span><span></span><span></span></div>
-        </div>
         <div class="clue-row-inner">
-          <div class="clue-number">5</div>
-          <div class="clue-content">
-            <div class="clue-label">Team</div>
-            <div class="clue-value" id="clue-val-4"></div>
+          <div class="clue-num-col">
+            <div class="clue-tag">CLUE</div>
+            <div class="clue-num-circle">5</div>
           </div>
+          <div class="clue-value" id="clue-val-4"></div>
         </div>
       </div>
 
@@ -255,7 +240,7 @@
   const cfg = STATMASK_CONFIG.mlb;
   cfg.clues.forEach((clue, i) => {
     const el = document.getElementById(`clue-val-${i}`);
-    if (el) el.textContent = clue.value;
+    if (el) el.textContent = clue;
   });
 
   // Init game

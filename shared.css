@@ -302,13 +302,31 @@ main {
 .clue-row-inner {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   width: 100%;
 }
 
 .clue-row-locked { display: none; }
 
-.clue-number {
+.clue-num-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.clue-tag {
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: var(--text-muted);
+  font-family: 'DM Mono', monospace;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.clue-num-circle {
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -319,48 +337,18 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   font-family: 'DM Mono', monospace;
-}
-
-.clue-content { flex: 1; min-width: 0; }
-
-.sports-card { counter-reset: clue-counter; }
-
-.clue-row::before {
-  counter-increment: clue-counter;
-  content: "CLUE #" counter(clue-counter);
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  font-size: 8px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: var(--text-muted);
-  font-family: 'DM Mono', monospace;
-  z-index: 1;
-}
-
-.clue-label {
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: var(--text-muted);
-  line-height: 1;
 }
 
 .clue-value {
-  font-size: 15px;
-  font-weight: 700;
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 500;
   color: var(--text);
-  margin-top: 2px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  filter: blur(12px);
+  line-height: 1.45;
+  white-space: normal;
+  filter: blur(8px);
   transition: filter 0.5s;
   user-select: none;
 }

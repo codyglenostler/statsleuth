@@ -8,11 +8,11 @@ const STATMASK_CONFIG = {
   mlb: {
     answer: "Nolan Arenado",
     clues: [
-      { label: "Season", value: "2025" },
-      { label: "Batting Average", value: ".237" },
-      { label: "Position / Throws", value: "3B / Right" },
-      { label: "League", value: "National League" },
-      { label: "Team", value: "St. Louis Cardinals" }
+      "This player's stats are from the 2025 MLB season.",
+      "He batted .237 with 35 home runs and 91 RBIs.",
+      "He plays third base and throws right-handed.",
+      "He competes in the National League.",
+      "He plays for the St. Louis Cardinals."
     ],
     players: MLB_PLAYERS
   },
@@ -20,11 +20,11 @@ const STATMASK_CONFIG = {
   nba: {
     answer: "Karl-Anthony Towns",
     clues: [
-      { label: "Season", value: "2024-2025" },
-      { label: "Draft Year / Position", value: "2015 / PF/C" },
-      { label: "Season PPG", value: "24.4" },
-      { label: "College", value: "Kentucky" },
-      { label: "Team", value: "New York Knicks" }
+      "This player's stats are from the 2024-2025 NBA season.",
+      "He was the first overall pick in the 2015 NBA Draft.",
+      "He averaged 24.4 points per game this season.",
+      "He played college basketball at Kentucky.",
+      "He plays for the New York Knicks."
     ],
     players: NBA_PLAYERS
   },
@@ -32,11 +32,11 @@ const STATMASK_CONFIG = {
   nfl: {
     answer: "Tee Higgins",
     clues: [
-      { label: "Season", value: "2025" },
-      { label: "Draft Year / Position", value: "2020 / WR" },
-      { label: "Receiving Yards", value: "846" },
-      { label: "Conference", value: "AFC" },
-      { label: "Team", value: "Cincinnati Bengals" }
+      "This player's stats are from the 2024 NFL season.",
+      "He was drafted in the second round of the 2020 NFL Draft.",
+      "He recorded 846 receiving yards this season.",
+      "He plays in the AFC.",
+      "He plays for the Cincinnati Bengals."
     ],
     players: NFL_PLAYERS
   }
