@@ -272,40 +272,9 @@ main {
   align-items: center;
   gap: 12px;
   width: 100%;
-  opacity: 0;
-  transform: translateY(-8px);
-  transition: opacity 0.4s, transform 0.4s;
 }
 
-.clue-row.revealed .clue-row-inner {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.clue-row-locked {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: opacity 0.3s;
-}
-
-.clue-row-locked .lock-dots {
-  display: flex;
-  gap: 5px;
-}
-
-.clue-row-locked .lock-dots span {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--border);
-  display: block;
-}
-
-.clue-row.revealed .clue-row-locked { opacity: 0; pointer-events: none; }
+.clue-row-locked { display: none; }
 
 .clue-number {
   width: 22px;
@@ -359,6 +328,14 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  filter: blur(6px);
+  transition: filter 0.5s;
+  user-select: none;
+}
+
+.clue-row.revealed .clue-value {
+  filter: blur(0);
+  user-select: auto;
 }
 
 /* ── GUESS INPUT AREA ── */

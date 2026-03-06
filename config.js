@@ -8,7 +8,7 @@ const STATMASK_CONFIG = {
   mlb: {
     answer: "Nolan Arenado",
     clues: [
-      { label: "Year", value: "2025" },
+      { label: "Season", value: "2025" },
       { label: "Batting Average", value: ".237" },
       { label: "Position / Throws", value: "3B / Right" },
       { label: "League", value: "National League" },
@@ -20,7 +20,7 @@ const STATMASK_CONFIG = {
   nba: {
     answer: "Karl-Anthony Towns",
     clues: [
-      { label: "Year", value: "2024-2025" },
+      { label: "Season", value: "2024-2025" },
       { label: "Draft Year / Position", value: "2015 / PF/C" },
       { label: "Season PPG", value: "24.4" },
       { label: "College", value: "Kentucky" },
@@ -32,7 +32,7 @@ const STATMASK_CONFIG = {
   nfl: {
     answer: "Tee Higgins",
     clues: [
-      { label: "Year", value: "2025" },
+      { label: "Season", value: "2025" },
       { label: "Draft Year / Position", value: "2020 / WR" },
       { label: "Receiving Yards", value: "846" },
       { label: "Conference", value: "AFC" },
