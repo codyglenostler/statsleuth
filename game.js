@@ -5,6 +5,7 @@
 function initGame(sport, config) {
   const MAX_GUESSES = 5;
   const STORAGE_KEY = `statsleuth_v2_${sport}_${getTodayKey()}`;
+  const HISTORY_KEY = `statmask_history_${sport}`;
 
   // ── Load saved state ──
   let state = loadState();
@@ -34,6 +35,7 @@ function initGame(sport, config) {
 
   // ── Restore state on load ──
   restoreUI();
+  updateAvgDisplay(loadHistory());
 
   // ── Search / autocomplete ──
   searchInput.addEventListener('input', onSearchInput);
@@ -159,6 +161,7 @@ function initGame(sport, config) {
       state.locked = true;
       card.classList.add('win');
       triggerWinSweep();
+      recordGuesses(state.guessesUsed);
       setTimeout(() => showEndState('win'), 950);
     } else {
       state.wrongGuesses.push(matchedName);
@@ -177,6 +180,7 @@ function initGame(sport, config) {
         revealAllClues();
         revealCardHeader(false);
         card.classList.add('lose');
+        recordGuesses(state.guessesUsed);
         setTimeout(() => showEndState('lose'), 700);
       }
     }
@@ -310,6 +314,7 @@ function initGame(sport, config) {
       searchInput.disabled = true;
       guessBtn.disabled = true;
       lockedBanner.classList.add('show');
+      recordGuesses(state.guessesUsed);
 
       if (state.result === 'win') {
         revealAllClues();
@@ -349,6 +354,28 @@ function initGame(sport, config) {
     el.offsetHeight;
     el.style.animation = 'shake 0.35s ease';
     setTimeout(() => el.style.animation = '', 400);
+  }
+
+  // ────────────────────────────────────────────
+  function loadHistory() {
+    try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; }
+    catch { return []; }
+  }
+
+  function recordGuesses(guesses) {
+    const history = loadHistory();
+    const today = getTodayKey();
+    if (history.some(h => h.date === today)) return;
+    history.push({ date: today, guesses });
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+    updateAvgDisplay(history);
+  }
+
+  function updateAvgDisplay(history) {
+    const el = document.getElementById('nav-avg');
+    if (!el || !history.length) return;
+    const avg = (history.reduce((sum, h) => sum + h.guesses, 0) / history.length).toFixed(1);
+    el.textContent = `avg ${avg}`;
   }
 }
 
