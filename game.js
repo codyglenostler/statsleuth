@@ -140,8 +140,10 @@ function initGame(sport, config) {
       return;
     }
 
+    const matchedName = matched.replace(/\s*\(\d{4}-[\w]+\)$/, '').trim();
+
     // Already guessed?
-    if (state.wrongGuesses.includes(matched)) {
+    if (state.wrongGuesses.includes(matchedName)) {
       shake(searchInput);
       return;
     }
@@ -149,7 +151,6 @@ function initGame(sport, config) {
     searchInput.value = '';
     closeDropdown();
 
-    const matchedName = matched.replace(/\s*\(\d{4}-[\w]+\)$/, '').trim();
     const correct = matchedName.toLowerCase() === config.answer.toLowerCase();
 
     if (correct) {
@@ -160,9 +161,9 @@ function initGame(sport, config) {
       triggerWinSweep();
       setTimeout(() => showEndState('win'), 950);
     } else {
-      state.wrongGuesses.push(matched);
+      state.wrongGuesses.push(matchedName);
       updatePips();
-      addWrongGuessTag(matched);
+      addWrongGuessTag(matchedName);
       revealNextClue();
       card.classList.remove('wrong-flash');
       card.offsetHeight; // force reflow
