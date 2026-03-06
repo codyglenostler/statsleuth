@@ -56,7 +56,11 @@ function initGame(sport, config) {
   searchInput.addEventListener('input', onSearchInput);
   searchInput.addEventListener('keydown', onSearchKeydown);
   searchInput.addEventListener('blur', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      if (document.activeElement !== searchInput) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 300);
   });
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.search-container')) closeDropdown();
