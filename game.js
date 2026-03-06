@@ -27,6 +27,10 @@ function initGame(sport, config) {
   const shareBtn    = document.getElementById('share-btn');
   const lockedBanner= document.getElementById('locked-banner');
   const guessArea   = document.getElementById('guess-area');
+  const mysteryName = document.getElementById('mystery-name');
+
+  // ── Set blurred mystery name ──
+  if (mysteryName) mysteryName.textContent = config.answer;
 
   // ── Restore state on load ──
   restoreUI();
