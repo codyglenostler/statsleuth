@@ -215,7 +215,7 @@ main {
   color: white;
   text-align: center;
   padding: 12px;
-  filter: blur(7px);
+  filter: blur(14px);
   opacity: 1;
   z-index: 2;
   transition: opacity 0.5s, filter 0.5s;
@@ -328,7 +328,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  filter: blur(6px);
+  filter: blur(12px);
   transition: filter 0.5s;
   user-select: none;
 }
