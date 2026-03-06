@@ -32,6 +32,15 @@ function initGame(sport, config) {
   // ── Set blurred mystery name ──
   if (mysteryName) mysteryName.textContent = config.answer;
 
+  // ── Set revealed name + accolades ──
+  if (playerReveal) playerReveal.textContent = config.answer;
+  const accoladesEl = document.getElementById('player-accolades-reveal');
+  if (accoladesEl && config.accolades) {
+    accoladesEl.innerHTML = config.accolades
+      .map(a => `<span class="accolade-badge">${a}</span>`)
+      .join('');
+  }
+
   // ── Restore state on load ──
   restoreUI();
   updateAvgDisplay(loadHistory());
@@ -214,7 +223,6 @@ function initGame(sport, config) {
     // Header is at the top — unmask as sweep first hits (~80ms)
     setTimeout(() => {
       cardHeader.classList.add('revealed');
-      playerReveal.textContent = config.answer;
     }, 80);
     // Stagger each clue row to match the sweep traveling down the card
     [230, 360, 480, 600, 720].forEach((delay, i) => {
@@ -225,7 +233,6 @@ function initGame(sport, config) {
   function revealCardHeader(win) {
     setTimeout(() => {
       cardHeader.classList.add('revealed');
-      playerReveal.textContent = config.answer;
     }, win ? 300 : 500);
   }
 
