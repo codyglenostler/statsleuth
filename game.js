@@ -34,6 +34,9 @@ function initGame(sport, config) {
   // ── Search / autocomplete ──
   searchInput.addEventListener('input', onSearchInput);
   searchInput.addEventListener('keydown', onSearchKeydown);
+  searchInput.addEventListener('blur', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.search-container')) closeDropdown();
   });
@@ -109,7 +112,8 @@ function initGame(sport, config) {
   function selectPlayer(name) {
     searchInput.value = name;
     closeDropdown();
-    searchInput.focus();
+    searchInput.blur();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   function closeDropdown() {
