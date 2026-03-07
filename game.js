@@ -47,26 +47,20 @@ function initGame(sport, config) {
 
   // ── Search / autocomplete ──
   let searchActive = false;
+  let lockedScrollY = null;
 
-  // Position/size dropdown based on actual visual viewport space
-  function positionDropdown() {
-    if (!dropdown.classList.contains('open')) return;
-    const vp = window.visualViewport;
-    const vpHeight = vp ? vp.height : window.innerHeight;
-    const vpTop    = vp ? vp.offsetTop : 0;
-    const rect = searchInput.getBoundingClientRect();
-    const spaceBelow = vpHeight - (rect.bottom - vpTop) - 8;
-    const spaceAbove = (rect.top  - vpTop) - 8;
+  function snapScroll() {
+    if (lockedScrollY !== null) window.scrollTo(0, lockedScrollY);
+  }
 
-    if (spaceBelow >= 100 || spaceBelow >= spaceAbove) {
-      dropdown.style.top    = 'calc(100% + 6px)';
-      dropdown.style.bottom = 'auto';
-      dropdown.style.maxHeight = Math.max(80, Math.min(320, spaceBelow)) + 'px';
-    } else {
-      dropdown.style.bottom = 'calc(100% + 6px)';
-      dropdown.style.top    = 'auto';
-      dropdown.style.maxHeight = Math.max(80, Math.min(320, spaceAbove)) + 'px';
-    }
+  function lockScroll() {
+    lockedScrollY = Math.round(window.scrollY);
+    window.addEventListener('scroll', snapScroll);
+  }
+
+  function unlockScroll() {
+    lockedScrollY = null;
+    window.removeEventListener('scroll', snapScroll);
   }
 
   searchInput.addEventListener('focus', () => {
@@ -74,19 +68,22 @@ function initGame(sport, config) {
     searchActive = true;
     let el = searchInput, absTop = 0;
     while (el) { absTop += el.offsetTop; el = el.offsetParent; }
+    const targetY = Math.max(0, absTop - 68);
     setTimeout(() => {
-      window.scrollTo({ top: absTop - 68, behavior: 'smooth' });
+      window.scrollTo({ top: targetY, behavior: 'smooth' });
+      // Lock after smooth scroll settles so nothing can move it while typing
+      setTimeout(() => { if (searchActive) lockScroll(); }, 550);
     }, 350);
   });
 
   searchInput.addEventListener('input', onSearchInput);
   searchInput.addEventListener('keydown', onSearchKeydown);
 
-  // Only scroll back to top when user deliberately taps OUTSIDE the input area —
-  // never on blur alone (space key causes spurious blur/refocus cycles on mobile)
+  // Only dismiss when user explicitly taps outside the input area
   document.addEventListener('pointerdown', (e) => {
     if (searchActive && !e.target.closest('.guess-area')) {
       searchActive = false;
+      unlockScroll();
       closeDropdown();
       searchInput.blur();
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -170,6 +167,8 @@ function initGame(sport, config) {
     searchInput.value = name;
     closeDropdown();
     searchInput.blur();
+    searchActive = false;
+    unlockScroll();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
