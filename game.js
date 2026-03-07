@@ -48,7 +48,7 @@ function initGame(sport, config) {
   // ── Search / autocomplete ──
   let searchActive = false;
 
-  // Measures visualViewport space above/below input and positions the dropdown
+  // Position/size dropdown based on actual visual viewport space
   function positionDropdown() {
     if (!dropdown.classList.contains('open')) return;
     const vp = window.visualViewport;
@@ -56,14 +56,13 @@ function initGame(sport, config) {
     const vpTop    = vp ? vp.offsetTop : 0;
     const rect = searchInput.getBoundingClientRect();
     const spaceBelow = vpHeight - (rect.bottom - vpTop) - 8;
-    const spaceAbove = (rect.top - vpTop) - 8;
+    const spaceAbove = (rect.top  - vpTop) - 8;
 
     if (spaceBelow >= 100 || spaceBelow >= spaceAbove) {
       dropdown.style.top    = 'calc(100% + 6px)';
       dropdown.style.bottom = 'auto';
       dropdown.style.maxHeight = Math.max(80, Math.min(320, spaceBelow)) + 'px';
     } else {
-      // Flip upward — more room above than below
       dropdown.style.bottom = 'calc(100% + 6px)';
       dropdown.style.top    = 'auto';
       dropdown.style.maxHeight = Math.max(80, Math.min(320, spaceAbove)) + 'px';
@@ -73,31 +72,26 @@ function initGame(sport, config) {
   searchInput.addEventListener('focus', () => {
     if (searchActive) return;
     searchActive = true;
-    // Capture absolute doc position before keyboard shifts layout
     let el = searchInput, absTop = 0;
     while (el) { absTop += el.offsetTop; el = el.offsetParent; }
     setTimeout(() => {
-      window.scrollTo({ top: absTop - 68, behavior: 'smooth' }); // 56px nav + 12px gap
-      positionDropdown();
+      window.scrollTo({ top: absTop - 68, behavior: 'smooth' });
     }, 350);
   });
 
   searchInput.addEventListener('input', onSearchInput);
   searchInput.addEventListener('keydown', onSearchKeydown);
 
-  searchInput.addEventListener('blur', () => {
-    setTimeout(() => {
-      if (document.activeElement !== searchInput) {
-        searchActive = false;
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    }, 500);
+  // Only scroll back to top when user deliberately taps OUTSIDE the input area —
+  // never on blur alone (space key causes spurious blur/refocus cycles on mobile)
+  document.addEventListener('pointerdown', (e) => {
+    if (searchActive && !e.target.closest('.guess-area')) {
+      searchActive = false;
+      closeDropdown();
+      searchInput.blur();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   });
-
-  // Reposition whenever the visual viewport resizes (keyboard appear/disappear)
-  if (window.visualViewport) {
-    window.visualViewport.addEventListener('resize', positionDropdown);
-  }
 
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.search-container')) closeDropdown();
