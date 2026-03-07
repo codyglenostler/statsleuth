@@ -89,7 +89,7 @@
 <main>
 
   <div class="page-header">
-    <h1>🏀 <span>NBA</span> DAILY</h1>
+    <h1>🏀 <span>NBA</span> PLAYER PROFILE</h1>
     <p class="game-subtitle">Each wrong guess unmasks a new clue. Guess the player in as few tries as possible!</p>
     <p class="eligibility-note">Players must have a minimum of 25 Games Played in the clue year to be eligible</p>
   </div>
@@ -209,19 +209,30 @@
 <script src="mlb_players.js?v=2"></script>
 <script src="nba_players.js?v=2"></script>
 <script src="nfl_players.js?v=2"></script>
-<script src="config.js?v=2"></script>
 <script src="game.js?v=2"></script>
 <script>
   document.getElementById('nav-date').textContent =
     new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
 
-  const cfg = STATMASK_CONFIG.nba;
-  cfg.clues.forEach((clue, i) => {
-    const el = document.getElementById(`clue-val-${i}`);
-    if (el) el.textContent = clue;
-  });
+  const _d = new Date();
+  const today = `${_d.getFullYear()}-${String(_d.getMonth()+1).padStart(2,'0')}-${String(_d.getDate()).padStart(2,'0')}`;
 
-  initGame('nba', cfg);
+  fetch('schedule.json?v=' + today)
+    .then(r => r.json())
+    .then(schedule => {
+      const day = schedule[today];
+      if (!day || !day.nba || !day.nba.answer) {
+        document.getElementById('sports-card').innerHTML =
+          '<p style="padding:32px;text-align:center;font-family:DM Sans,sans-serif;color:#888">No puzzle scheduled for today — check back soon!</p>';
+        return;
+      }
+      const cfg = Object.assign({}, day.nba, { players: NBA_PLAYERS });
+      cfg.clues.forEach((clue, i) => {
+        const el = document.getElementById(`clue-val-${i}`);
+        if (el) el.textContent = clue;
+      });
+      initGame('nba', cfg);
+    });
 </script>
 </body>
 </html>

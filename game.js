@@ -46,26 +46,10 @@ function initGame(sport, config) {
   updateAvgDisplay(loadHistory());
 
   // ── Search / autocomplete ──
-  let searchActive = false;
-  searchInput.addEventListener('focus', () => {
-    if (searchActive) return; // already scrolled, ignore re-focus (e.g. space key cycle)
-    searchActive = true;
-    // Capture absolute doc offset before keyboard shifts layout
-    let el = searchInput, absTop = 0;
-    while (el) { absTop += el.offsetTop; el = el.offsetParent; }
-    setTimeout(() => {
-      window.scrollTo({ top: absTop - 68, behavior: 'smooth' }); // 56px nav + 12px gap
-    }, 350);
-  });
   searchInput.addEventListener('input', onSearchInput);
   searchInput.addEventListener('keydown', onSearchKeydown);
   searchInput.addEventListener('blur', () => {
-    setTimeout(() => {
-      if (document.activeElement !== searchInput) {
-        searchActive = false;
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    }, 500);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.search-container')) closeDropdown();

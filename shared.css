@@ -479,7 +479,7 @@ main {
   border-radius: 12px;
   box-shadow: var(--shadow-md);
   z-index: 50;
-  max-height: 320px;
+  max-height: 200px;
   overflow-y: auto;
   display: none;
 }
