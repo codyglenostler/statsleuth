@@ -76,7 +76,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--text-muted);
   padding: 6px 14px;
@@ -724,7 +724,7 @@ main {
   nav { padding: 0 12px; gap: 4px; }
   .nav-logo { font-size: 17px; margin-right: 6px; }
   .nav-links { gap: 2px; }
-  .nav-links a { font-size: 11px; padding: 5px 9px; letter-spacing: 0; }
+  .nav-links a { font-size: 14px; padding: 5px 9px; letter-spacing: 0; }
   .nav-date { font-size: 10px; white-space: nowrap; }
 }
 
