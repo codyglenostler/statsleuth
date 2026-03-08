@@ -98,11 +98,15 @@ function initGame(sport, config) {
   shareBtn.addEventListener('click', shareResult);
 
   // ────────────────────────────────────────────
+  function normalize(str) {
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  }
+
   function onSearchInput() {
     const q = searchInput.value.trim();
     if (q.length < 3) { closeDropdown(); return; }
     const matches = config.players.filter(p =>
-      p.toLowerCase().includes(q.toLowerCase())
+      normalize(p).includes(normalize(q))
     ).slice(0, 8);
     renderDropdown(matches, q);
   }
@@ -186,8 +190,8 @@ function initGame(sport, config) {
     const guess = searchInput.value.trim();
     if (!guess) return;
 
-    // Check if in player list (case-insensitive)
-    const matched = config.players.find(p => p.toLowerCase() === guess.toLowerCase());
+    // Check if in player list (accent-insensitive)
+    const matched = config.players.find(p => normalize(p) === normalize(guess));
     if (!matched) {
       shake(searchInput);
       searchInput.placeholder = 'Player not found — check spelling';
@@ -206,7 +210,7 @@ function initGame(sport, config) {
     searchInput.value = '';
     closeDropdown();
 
-    const correct = matchedName.toLowerCase() === config.answer.toLowerCase();
+    const correct = normalize(matchedName) === normalize(config.answer);
 
     if (correct) {
       state.result = 'win';
