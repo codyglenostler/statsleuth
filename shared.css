@@ -738,22 +738,23 @@ main {
 
   .card-header { min-height: 110px; }
 
-  /* Compact unrevealed clue rows — thin placeholder lines */
-  .clue-row:not(.revealed) {
-    min-height: 22px;
-    padding: 0 18px;
-    justify-content: center;
+  /* Compact unrevealed rows: blurred content clipped to preview height */
+  .clue-row {
+    transition: max-height 0.35s ease, padding 0.35s ease;
   }
-  .clue-row:not(.revealed) .clue-row-inner { display: none; }
-  .clue-row:not(.revealed)::after {
-    content: '· · ·';
-    font-size: 9px;
-    letter-spacing: 4px;
-    color: var(--border);
+  .clue-row:not(.revealed) {
+    min-height: 0;
+    max-height: 38px;
+    overflow: hidden;
+    padding: 6px 14px;
   }
 
-  /* Tighter revealed rows */
-  .clue-row.revealed { padding: 10px 14px; min-height: 0; }
+  /* Revealed rows expand smoothly, then show unblurred clue */
+  .clue-row.revealed {
+    max-height: 200px;
+    padding: 10px 14px;
+    min-height: 0;
+  }
 
   .search-input { padding: 10px 14px; font-size: 16px; }
   .guess-btn { padding: 10px; font-size: 14px; }
