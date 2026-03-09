@@ -1,283 +1,176 @@
 {
-  "2026-03-06": {
+  "2026-03-09": {
     "mlb": {
-      "answer": "Nolan Arenado",
-      "accolades": ["10× Gold Glove", "5× Silver Slugger", "8× All-Star", "6x Platinum Glove"],
+      "answer": "Patrick Bailey",
+      "accolades": ["Gold Glove Finalist"],
       "clues": [
-        "During the 2025 season, he hit exactly .237.",
-        "California Native, in 2017, he became the first player in history to complete a cycle with a walk-off home run.",
-        "He spent his early career anchored at the 'Hot Corner'",
-        "He is the only infielder in MLB history to win a Gold Glove in each of his first 10 seasons.",
-        "He currently plays for the Arizona Diamondbacks."
+        "In 2025, he set personal bests with 135 games played and led all MLB catchers with 19 Defensive Runs Saved.",
+        "Nationality: American; He is a rare switch-hitting catcher who became the first at his position in franchise history to record a 'Splash Hit' home run into the cove.",
+        "In 2023, he became the first rookie catcher in history to record a walk-off home run and a walk-off pickoff in the same season.",
+        "He spent his first two seasons catching for staff ace Carlos Rodón before Rodón left for New York.",
+        "He plays Catcher for the San Francisco Giants"
       ]
     },
     "nba": {
-      "answer": "Karl-Anthony Towns",
-      "accolades": ["6× All-Star", "3× All-NBA", "2016 ROY"],
+      "answer": "Buddy Hield",
+      "accolades": ["2020 3-Point Contest Champion"],
       "clues": [
-        "This player's averaged 24.4 PPG in the 2024-2025 NBA season.",
-        "In 2024, he became only the seventh player in NBA history to record a 60-point game multiple times in his career.",
-        "He played college basketball at Kentucky.",
-        "He was selected first round in the 2015 NBA Draft.",
-        "He currently plays for the New York Knicks."
+        "In the 2024-25 season, he appeared in all 82 games and averaged 11.1 points and 2.5 made three-pointers.",
+        "College: Oklahoma; Draft Year: 2016",
+        "He ranks second all-time in three-pointers made during the first eight seasons of an NBA career.",
+        "He spent over five seasons as the primary floor spacer for All-Star point guard De'Aaron Fox in Sacramento.",
+        "He plays Guard for the Golden State Warriors"
       ]
     },
     "nfl": {
-      "answer": "Tee Higgins",
-      "accolades": ["1× Pro Bowl"],
+      "answer": "Dontayvion Wicks",
+      "accolades": ["2023 5th Round Pick"],
       "clues": [
-        "This player had 846 receving yards in the 2024 NFL season.",
-        "Actively plays for the same organization he was drafted by.",
-        "He finished his collegiate career tied with legends Sammy Watkins and DeAndre Hopkins for the most receiving touchdowns in school history (27)",
-        "Was in the top 5 for Receiving TD's in the 2025 NFL season.",
-        "He currently plays for the Cincinnati Bengals."
+        "During the 2025 season, he recorded 30 receptions for 332 yards and 2 touchdowns.",
+        "College: Virginia; Draft Year: 2023",
+        "In 2023, he recorded a first down on 74.4% of his catches, the highest rate among all NFL rookies that year.",
+        "He entered the league playing in the same offense as star veteran running back Aaron Jones.",
+        "He plays Wide Receiver for the Green Bay Packers"
       ]
     }
   },
-  
-    "2026-03-07": {
-      "mlb": {
-        "answer": "Gunnar Henderson",
-        "accolades": ["2023 AL ROY", "2024 All-Star", "Silver Slugger"],
-        "clues": [
-          "In 159 games during the 2025 season, he posted a .274 batting average.",
-          "A native of Alabama, his father famously built a baseball field behind their house while he was growing up.",
-          "He is the first player since the legendary Cal Ripken Jr. to hold the franchise record for home runs by a shortstop.",
-          "He was a unanimous choice for the American League Rookie of the Year in 2023.",
-          "He famously used his signing bonus to build a professional-grade batting cage on his parents' property."
-        ]
-      },
-      "nba": {
-        "answer": "Cole Anthony",
-        "accolades": ["2020 McDonald's All-American MVP"],
-        "clues": [
-          "He averaged 9.4 points and 3.5 assists per game during the 2024-25 NBA season.",
-          "He is the son of an 11-year NBA veteran who famously won an NCAA title with UNLV in 1990.",
-          "During the 2025 season, he was traded to Milwaukee to serve as a backcourt spark plug.",
-          "He was selected in the first round (15th overall) of the 2020 NBA Draft.",
-          "He shares a last name with a recent Knicks HOF inductee"
-        ]
-      },
-      "nfl": {
-        "answer": "Mike Evans",
-        "accolades": ["1x Super Bowl Champ", "5x Pro Bowl"],
-        "clues": [
-          "In an injury-shortened 2025 season, he recorded exactly 368 receiving yards and 3 touchdowns.",
-          "An American from Galveston, Texas, he was a star basketball player before focusing on football in high school.",
-          "He spent the first decade of his career catching passes from both Jameis Winston and Tom Brady.",
-          "He is the only receiver in NFL history to record 1,000-plus receiving yards in each of his first 11 seasons.",
-          "He currently shares a historic record with Hall of Famer Jerry Rice for the most consecutive 1,000-yard seasons."
-        ]
-      }
+  "2026-03-10": {
+    "mlb": {
+      "answer": "Travis d'Arnaud",
+      "accolades": ["2021 World Series Champion", "All-Star"],
+      "clues": [
+        "In the 2025 season, he recorded 6 home runs and 21 RBI across 88 appearances.",
+        "Nationality: American; He is an avid student of catching mechanics who grew up modeling his game after Hall of Famer Mike Piazza.",
+        "In 2018, he famously played three different infield positions (3B, 2B, and 1B) in a single game for the Mets.",
+        "He won a World Series title in 2021 while catching for franchise-icon first baseman Freddie Freeman.",
+        "He plays Catcher for the Los Angeles Angels"
+      ]
     },
-    "2026-03-08": {
-      "mlb": {
-        "answer": "Francisco Lindor",
-        "accolades": ["4x All-Star", "2x Gold Glove", "3x Silver Slugger"],
-        "clues": [
-          "In 2025, he joined the elite 30/30 club for the second time in his career.",
-          "Born in Caguas, Puerto Rico, he moved to Florida at age 12 without knowing any English.",
-          "In 2025, he and teammate Juan Soto became only the third pair of teammates in history to both hit 30 HR and steal 30 bases.",
-          "He is a multi-time Platinum Glove winner, signifying him as the best overall defender in his league.",
-          "He is widely known by the nickname 'Mr. Smile' for his infectious attitude on the field."
-        ]
-      },
-      "nba": {
-        "answer": "Gradey Dick",
-        "accolades": ["2022 Gatorade National POY"],
-        "clues": [
-          "He averaged 14.4 points and 3.6 rebounds per game during the 2024-25 season.",
-          "A native of Wichita, Kansas, he stayed in-state to play for the Jayhawks in college.",
-          "He anchors the perimeter in Toronto alongside All-Star teammate Scottie Barnes.",
-          "He was the 13th overall pick in the 2023 NBA Draft.",
-          "He famously went viral on draft night for wearing a custom, red-sequined suit inspired by 'The Wizard of Oz'."
-        ]
-      },
-      "nfl": {
-        "answer": "Xavier Hutchinson",
-        "accolades": ["2023 6th Round Pick"],
-        "clues": [
-          "During the 2025 NFL season, he recorded 35 receptions for 428 yards and 3 touchdowns.",
-          "An American from Jacksonville, he was a first-team All-American at Iowa State.",
-          "He is a primary target for C.J. Stroud in a high-powered Houston offense.",
-          "Despite being a late-round draft pick, he led all 2023 rookies in special teams tackles in his debut year.",
-          "He is known in the locker room for his elite run-blocking, often being used as a 'big slot' receiver."
-        ]
-      }
+    "nba": {
+      "answer": "Kelly Olynyk",
+      "accolades": ["12-Year NBA Veteran"],
+      "clues": [
+        "In his 20 starts during the 2024-25 season, he averaged 10.7 points, 5.9 rebounds, and 3.6 assists.",
+        "College: Gonzaga; Draft Year: 2013",
+        "In 2017, he scored 26 points in a Game 7 win, which remains the highest-scoring Game 7 performance by a bench player in NBA history.",
+        "He spent several seasons as a key frontcourt partner for All-Star center Bam Adebayo in Miami.",
+        "He plays Forward/Center for the New Orleans Pelicans"
+      ]
     },
-    "2026-03-09": {
-  "mlb": {
-    "answer": "Patrick Bailey",
-    "accolades": ["Gold Glove Finalist"],
-    "clues": [
-      "He was a first-round pick out of NC State and a finalist for the Golden Spikes Award.",
-      "An American from North Carolina, he is widely considered the best defensive catcher of his generation.",
-      "He forms a star battery in the Bay Area with ace Logan Webb.",
-      "In 2025, he led all MLB catchers in 'Strike Rate' and defensive runs saved.",
-      "He is the elite defensive anchor for the San Francisco Giants."
-    ]
+    "nfl": {
+      "answer": "Zach Ertz",
+      "accolades": ["1x Super Bowl Champ", "3x Pro Bowl"],
+      "clues": [
+        "In the 2025 season, he recorded 50 receptions for 504 yards and 4 touchdowns for the Commanders.",
+        "College: Stanford; Draft Year: 2013",
+        "He holds the NFL record for most receptions by a tight end in a single season (116).",
+        "He was the favorite target for quarterback Carson Wentz during their championship run in Philadelphia.",
+        "He plays Tight End for the Washington Commanders"
+      ]
+    }
   },
-  "nba": {
-    "answer": "Buddy Hield",
-    "accolades": ["2020 3-Point Contest Champion"],
-    "clues": [
-      "He ranks second all-time in three-pointers made during the first eight seasons of a career.",
-      "He is a lethal sharpshooter who famously grew up playing on a rim made from a milk crate.",
-      "In 2025, he joined a new team to help fill the legendary void left by Klay Thompson.",
-      "He is one of the most prolific 'volume' three-point shooters in NBA history.",
-      "He currently provides veteran floor spacing for Steph Curry and the Golden State Warriors."
-    ]
+  "2026-03-11": {
+    "mlb": {
+      "answer": "CJ Abrams",
+      "accolades": ["2024 All-Star"],
+      "clues": [
+        "In 2025, he recorded 19 home runs and 31 stolen bases while leading his team in runs scored with 92.",
+        "Nationality: American; He was a champion competitive swimmer in high school before choosing to pursue a professional baseball career.",
+        "In 2023, he became the youngest player in franchise history to record 40+ stolen bases in a single season.",
+        "He was the centerpiece of the blockbuster trade that sent generational outfielder Juan Soto to San Diego.",
+        "He plays Shortstop for the Washington Nationals"
+      ]
+    },
+    "nba": {
+      "answer": "Mike Conley",
+      "accolades": ["1x All-Star", "NBA Sportsmanship Award"],
+      "clues": [
+        "In his 18th NBA season (2024-25), he averaged 8.2 points and 4.5 assists per game.",
+        "College: Ohio State; Draft Year: 2007",
+        "He played 12 consecutive seasons and over 800 games before receiving his first ever technical foul.",
+        "He spent over a decade as the floor general for legendary defensive center Marc Gasol in Memphis.",
+        "He plays Guard for the Minnesota Timberwolves"
+      ]
+    },
+    "nfl": {
+      "answer": "James Cook",
+      "accolades": ["2025 NFL Rushing Leader", "2x Pro Bowl"],
+      "clues": [
+        "In 2025, he won the NFL rushing title with 1,621 yards and 12 touchdowns on 307 carries.",
+        "College: Georgia; Draft Year: 2022",
+        "In 2025, he became the first player for his franchise to win the rushing title since O.J. Simpson in 1976.",
+        "He spent his first two seasons sharing the backfield with veteran back Devin Singletary.",
+        "He plays Running Back for the Buffalo Bills"
+      ]
+    }
   },
-  "nfl": {
-    "answer": "Dontayvion Wicks",
-    "accolades": ["2023 5th Round Pick"],
-    "clues": [
-      "He was a 5th-round pick who set the single-season receiving record at the University of Virginia.",
-      "He is a smooth route-runner known for his elite ability to create separation at the line of scrimmage.",
-      "He is one of only six players in franchise history to record 4+ TDs in each of his first two seasons.",
-      "He is part of a young, prolific receiving corps led by quarterback Jordan Love.",
-      "He is a rising star wide receiver for the Green Bay Packers."
-    ]
-  }
-},
-"2026-03-10": {
-  "mlb": {
-    "answer": "Travis d'Arnaud",
-    "accolades": ["2021 World Series Champion", "All-Star"],
-    "clues": [
-      "He was once a centerpiece of the blockbuster trade that sent R.A. Dickey to the Blue Jays.",
-      "A California native of Filipino descent, he is the older brother of a former MLB outfielder.",
-      "He famously played three different infield positions (3B, 2B, and 1B) in a single game for the Mets.",
-      "He was the starting catcher for the Atlanta Braves during their 2021 World Series title run.",
-      "In 2025, he left the Braves to sign as a veteran leader for the Los Angeles Angels."
-    ]
+  "2026-03-12": {
+    "mlb": {
+      "answer": "Cal Raleigh",
+      "accolades": ["2025 Platinum Glove", "Silver Slugger"],
+      "clues": [
+        "In the 2025 season, he led the majors with 60 home runs and recorded 125 RBI.",
+        "Nationality: American; He is the first switch-hitting catcher in MLB history to record 30+ home runs in three different seasons.",
+        "In 2025, he became the first catcher to win a Platinum Glove while also leading the league in home runs.",
+        "He hit a legendary walk-off home run to end a 21-year drought while playing with outfielder Jarred Kelenic.",
+        "He plays Catcher for the Seattle Mariners"
+      ]
+    },
+    "nba": {
+      "answer": "Eric Gordon",
+      "accolades": ["2017 6th Man of the Year"],
+      "clues": [
+        "He averaged 6.8 points and shot 41% from three-point range during the 2024-25 season.",
+        "College: Indiana; Draft Year: 2008",
+        "In 2017, he became the first player in franchise history to win the NBA Sixth Man of the Year award.",
+        "He spent many seasons as the primary perimeter threat alongside scoring legend James Harden in Houston.",
+        "He plays Guard for the Phoenix Suns"
+      ]
+    },
+    "nfl": {
+      "answer": "AJ Barner",
+      "accolades": ["2024 National Champion (Michigan)"],
+      "clues": [
+        "During his rookie 2025 season, he recorded 52 receptions for 519 yards and 6 touchdowns.",
+        "College: Michigan; Draft Year: 2024",
+        "He set a franchise record for a rookie tight end by recording a catch in 13 consecutive games.",
+        "He won a National Title playing for head coach Jim Harbaugh.",
+        "He plays Tight End for the Seattle Seahawks"
+      ]
+    }
   },
-  "nba": {
-    "answer": "Kelly Olynyk",
-    "accolades": ["12-Year NBA Veteran"],
-    "clues": [
-      "He was a first-round pick (13th overall) in the 2013 NBA Draft out of Gonzaga.",
-      "He is a 7-foot 'stretch big' known for his long hair and unique ability to facilitate from the post.",
-      "In early 2025, he was traded to a new team to provide veteran spacing for Zion Williamson.",
-      "He has played for seven different NBA franchises and serves as a captain for his national team.",
-      "He is the veteran floor-spacing big man currently playing for the New Orleans Pelicans."
-    ]
-  },
-  "nfl": {
-    "answer": "Zach Ertz",
-    "accolades": ["1x Super Bowl Champ", "3x Pro Bowl"],
-    "clues": [
-      "He attended Stanford University and was drafted in the second round by Chip Kelly.",
-      "He holds the NFL record for the most receptions by a tight end in a single season (116).",
-      "He famously caught the go-ahead touchdown pass in the fourth quarter of Super Bowl LII.",
-      "In 2025, he served as the primary 'security blanket' for rookie sensation Jayden Daniels.",
-      "He is the legendary veteran tight end currently playing for the Washington Commanders."
-    ]
-  }
-},
-"2026-03-11": {
-  "mlb": {
-    "answer": "CJ Abrams",
-    "accolades": ["2024 All-Star"],
-    "clues": [
-      "He was the 6th overall pick in the 2019 MLB Draft and quickly became a top-10 prospect.",
-      "A native of Georgia, he is known by the nickname 'The Alien' for his incredible speed.",
-      "He was the centerpiece of the blockbuster 2022 trade that sent Juan Soto to San Diego.",
-      "He is one of only 10 players in MLB history to record 20 HR and 40 SB in his age-22 season.",
-      "He is the All-Star shortstop and face of the Washington Nationals."
-    ]
-  },
-  "nba": {
-    "answer": "Mike Conley",
-    "accolades": ["1x All-Star", "NBA Sportsmanship Award"],
-    "clues": [
-      "He holds the Ohio State program record for most assists in a single season (238).",
-      "He is the son of an Olympic gold medalist and is famously an avid competitive bowler.",
-      "He currently serves as the veteran 'floor general' and mentor for Anthony Edwards.",
-      "He is widely considered one of the classiest players in NBA history, winning multiple Sportsmanship Awards.",
-      "He is the veteran starting point guard for the Minnesota Timberwolves."
-    ]
-  },
-  "nfl": {
-    "answer": "James Cook",
-    "accolades": ["2025 NFL Rushing Leader", "2x Pro Bowl"],
-    "clues": [
-      "He was a second-round pick out of Georgia where he won a National Championship.",
-      "He is a versatile dual-threat back known for his elite vision and pass-catching ability.",
-      "He is the younger brother of 4-time Pro Bowl running back Dalvin Cook.",
-      "In 2025, he became the first player for his franchise to win the rushing title since O.J. Simpson.",
-      "He is the star running back for the Buffalo Bills and a primary weapon for Josh Allen."
-    ]
-  }
-},
-"2026-03-12": {
-  "mlb": {
-    "answer": "Cal Raleigh",
-    "accolades": ["2025 Platinum Glove", "Silver Slugger"],
-    "clues": [
-      "He hit the iconic 'clinch' home run in 2022 to end his team's 21-year playoff drought.",
-      "An American from North Carolina, he is known affectionately by fans as 'The Big Dumper.'",
-      "He is the battery mate and clubhouse leader for Seattle superstar Julio Rodríguez.",
-      "In 2025, he set the all-time MLB record for home runs by a catcher in a single season (60).",
-      "He is the star powerhouse catcher for the Seattle Mariners."
-    ]
-  },
-  "nba": {
-    "answer": "Eric Gordon",
-    "accolades": ["2017 6th Man of the Year"],
-    "clues": [
-      "He was named 'Mr. Basketball' in the state of Indiana and was a star for the Hoosiers.",
-      "He was born on Christmas Day and is known for his incredibly deep shooting range.",
-      "He famously won the NBA Three-Point Contest in 2017 during his time in Houston.",
-      "In 2025, he provided veteran bench scoring and shooting for a star-studded Phoenix roster.",
-      "He is a veteran sharpshooter who currently plays for the Phoenix Suns."
-    ]
-  },
-  "nfl": {
-    "answer": "AJ Barner",
-    "accolades": ["2024 National Champion (Michigan)"],
-    "clues": [
-      "He was a 4th-round pick in 2024, drafted primarily for his elite reputation as a blocker.",
-      "He was a captain for the Michigan Wolverines team that won the 2024 National Title.",
-      "He set a franchise record for a rookie tight end by recording a catch in 13 consecutive games.",
-      "In 2025, he became the primary tight end target for Sam Darnold in the Pacific Northwest.",
-      "He is the rising star tight end for the Seattle Seahawks."
-    ]
-  }
-},
-
   "2026-03-13": {
     "mlb": {
       "answer": "Brenton Doyle",
       "accolades": ["2x Gold Glove"],
       "clues": [
-        "He played college baseball at the small Shepherd University before being drafted in 2019.",
-        "An American from Virginia, he recorded the fastest throw by an outfielder in 2024 (105 mph).",
-        "He is one of only three rookies in MLB history to win a Gold Glove in center field.",
-        "He anchors the outfield in high altitude alongside fellow young star Ezequiel Tovar.",
-        "He is the elite defensive star in center field for the Colorado Rockies."
+        "In 2025, he posted a .287 average and a .779 OPS after the All-Star break.",
+        "Nationality: American; He didn't start playing center field until his second year of college, having previously played as a shortstop.",
+        "In 2024, he recorded a 105 mph throw from the outfield, the fastest tracked throw of the entire MLB season.",
+        "He patrolled the outfield as a rookie alongside veteran Jurickson Profar.",
+        "He plays Center Field for the Colorado Rockies"
       ]
     },
     "nba": {
       "answer": "Pat Connaughton",
       "accolades": ["2021 NBA Champion"],
       "clues": [
-        "He was a two-sport star at Notre Dame and was drafted by the Baltimore Orioles in the 4th round.",
-        "He is a high-flying wing with a massive 44-inch vertical leap.",
-        "He has spent the majority of his career as a key reserve for Giannis Antetokounmpo.",
-        "He is a versatile role player known for his energy, rebounding, and corner three-point shooting.",
-        "He won an NBA Championship in 2021 as a core member of the Milwaukee Bucks."
+        "He averaged 5.3 points per game in 41 appearances during the 2024-25 season.",
+        "College: Notre Dame; Draft Year: 2015",
+        "He is one of the few athletes to be drafted into both the NBA and MLB, having been selected by the Baltimore Orioles.",
+        "He won a championship in 2021 while coming off the bench for veteran P.J. Tucker.",
+        "He plays Guard/Forward for the Milwaukee Bucks"
       ]
     },
     "nfl": {
       "answer": "Jalen McMillan",
       "accolades": ["2024 3rd Round Pick"],
       "clues": [
-        "He was a 3rd-round pick in 2024 out of the University of Washington.",
-        "He was part of the legendary 'Big Three' Husky receivers alongside Rome Odunze and Ja'Lynn Polk.",
-        "He famously scored 7 touchdowns in the final 5 games of his rookie season.",
-        "He is a rising star wide receiver in Florida catching passes from Baker Mayfield.",
-        "He plays for the Tampa Bay Buccaneers alongside future Hall of Famer Mike Evans."
+        "In his rookie 2025 season, he finished with 7 touchdowns in his final 5 games.",
+        "College: Washington; Draft Year: 2024",
+        "He ranked second among all NFL rookies in receiving touchdowns during the 2024 season.",
+        "He entered the league catching passes from quarterback Baker Mayfield.",
+        "He plays Wide Receiver for the Tampa Bay Buccaneers"
       ]
     }
   },
@@ -286,33 +179,33 @@
       "answer": "Ryan McMahon",
       "accolades": ["All-Star"],
       "clues": [
-        "Before choosing baseball, he was a star high school quarterback in California.",
-        "An American from Orange County, he is a perennial finalist for the Gold Glove at third base.",
-        "In June 2025, he hit a 467-foot home run, one of the longest in the Statcast era.",
-        "In 2025, he left Colorado for the first time after being traded for a haul of prospects.",
-        "He is the current starting third baseman for the New York Yankees."
+        "In 2025, he hit 20 home runs for the fifth consecutive season despite a mid-year trade.",
+        "Nationality: American; He was a star high school quarterback who chose baseball over multiple D1 football scholarship offers.",
+        "In 2021, he became the first player in his franchise's history to lead the league in 'Defensive Runs Saved' at third base.",
+        "He spent years in the same infield as star shortstop Trevor Story.",
+        "He plays Third Base for the New York Yankees"
       ]
     },
     "nba": {
       "answer": "Jalen Williams",
       "accolades": ["2025 All-NBA 3rd Team", "All-Star"],
       "clues": [
-        "He was an unheralded recruit who played three years of college ball at Santa Clara.",
-        "He is the only player in NBA history to shoot over 50% FG and 40% 3PT as a rookie starter.",
-        "He is the versatile 'do-it-all' secondary scoring option next to Shai Gilgeous-Alexander.",
-        "In 2025, he was named an All-Star and All-NBA for the first time in his career.",
-        "He won the 2025 NBA Championship as a superstar wing for the Oklahoma City Thunder."
+        "In the 2024-25 season, he averaged 21.6 points and led his team to a conference-leading 68 wins.",
+        "College: Santa Clara; Draft Year: 2022",
+        "He is the only player in NBA history to shoot over 50% from the field and 40% from 3 as a rookie starter.",
+        "He won a championship in 2025 while playing alongside superstar Shai Gilgeous-Alexander.",
+        "He plays Forward for the Oklahoma City Thunder"
       ]
     },
     "nfl": {
       "answer": "Philip Rivers",
       "accolades": ["8x Pro Bowl", "2013 Comeback POY"],
       "clues": [
-        "He famously has 10 children and was known for never using profanity on the field.",
-        "He is a classic pocket passer who ranks 6th all-time in NFL passing yards and touchdowns.",
-        "He spent 16 legendary seasons as the face of the Chargers franchise.",
-        "He famously came out of a five-year retirement in December 2025 to play three 'bonus' games.",
-        "In 2025, he made a shock late-season comeback to start 3 games for the Indianapolis Colts."
+        "In his brief 2025 comeback, he started 3 games and led his team to a crucial late-season win.",
+        "College: NC State; Draft Year: 2004",
+        "He holds the NFL record for the most consecutive starts by a quarterback to begin a career (240).",
+        "He spent over a decade throwing touchdowns to legendary Hall of Fame tight end Antonio Gates.",
+        "He plays Quarterback for the Indianapolis Colts"
       ]
     }
   },
@@ -321,33 +214,33 @@
       "answer": "Geraldo Perdomo",
       "accolades": ["2025 Silver Slugger", "All-Star"],
       "clues": [
-        "He was signed out of Santo Domingo at age 16 for just $70,000.",
-        "A native of the Dominican Republic, he is a switch-hitting defensive specialist.",
-        "In 2025, he became the first shortstop in franchise history to record 100 RBI in a season.",
-        "He is the defensive anchor of an infield that includes superstar Corbin Carroll.",
-        "He is the starting All-Star shortstop for the Arizona Diamondbacks."
+        "In 2025, he finished 5th in all of MLB in fWAR, trailing only the league's top MVPs.",
+        "Nationality: Dominican; He is a switch-hitter who became the first player in his franchise history to record a grand slam for his first career home run.",
+        "In 2025, he became the first shortstop in franchise history to record 100 RBI in a single season.",
+        "He played the infield during a World Series run alongside veteran third baseman Evan Longoria.",
+        "He plays Shortstop for the Arizona Diamondbacks"
       ]
     },
     "nba": {
       "answer": "Jonas Valančiūnas",
       "accolades": ["All-Eurocup First Team"],
       "clues": [
-        "He was the 5th overall pick in the 2011 NBA Draft by the Toronto Raptors.",
-        "He is a massive 7-foot center known for his elite rebounding and 'old school' post game.",
-        "He has been a double-double machine for over a decade in the NBA.",
-        "In 2025, he signed with a new team to serve as the primary backup for Nikola Jokić.",
-        "He is the veteran backup center currently playing for the Denver Nuggets."
+        "He averaged 8.8 points and 5.2 rebounds in a career-low 18.8 minutes per game in 2024-25.",
+        "College: N/A (International); Draft Year: 2011",
+        "In 2021, he recorded 35 points and 25 rebounds in a single game, the first such feat in the NBA since 1976.",
+        "He spent several seasons as the primary post presence for All-Star point guard Kyle Lowry.",
+        "He plays Center for the Denver Nuggets"
       ]
     },
     "nfl": {
       "answer": "Marvin Harrison Jr.",
       "accolades": ["4th Overall Pick", "2x Biletnikoff Award"],
       "clues": [
-        "He is the first player in Ohio State history to record multiple 1,000-yard receiving seasons.",
-        "He is a 6'4\" receiver with elite body control and 'toe-tap' sideline ability.",
-        "He is the son of an Indianapolis Colts legend and Hall of Fame wide receiver.",
-        "He was the 4th overall pick in the 2024 NFL Draft, the first non-QB selected.",
-        "He is the #1 target for Kyler Murray and the Arizona Cardinals."
+        "In his rookie 2025 season, he recorded over 1,000 receiving yards and 10 touchdowns.",
+        "College: Ohio State; Draft Year: 2024",
+        "He is the first player in the history of his college to record multiple 1,000-yard receiving seasons.",
+        "He caught passes in college from quarterback C.J. Stroud.",
+        "He plays Wide Receiver for the Arizona Cardinals"
       ]
     }
   },
@@ -356,33 +249,33 @@
       "answer": "Brent Rooker",
       "accolades": ["2x All-Star"],
       "clues": [
-        "He was the 2017 SEC Player of the Year at Mississippi State before being a 1st-round pick.",
-        "An American from Tennessee, he played for four different teams before breaking out as an All-Star.",
-        "In 2025, he hit 17 home runs in the first round of the T-Mobile Home Run Derby.",
-        "He is a pure 'slugger' who consistently ranks in the top 1% of the league in Exit Velocity.",
-        "He is the primary power source and veteran leader for the Oakland Athletics."
+        "In the 2025 season, he hit .262 with 30 home runs and 89 RBI.",
+        "Nationality: American; He won the SEC Triple Crown in 2017 while playing at Mississippi State.",
+        "In 2023, he became the first player in his team's history to record 30 home runs in a season while playing primarily as a DH.",
+        "He shared the lineup with All-Star catcher Sean Murphy before Murphy was traded.",
+        "He plays Designated Hitter/Outfield for the Oakland Athletics"
       ]
     },
     "nba": {
       "answer": "Jeremy Sochan",
       "accolades": ["Big 12 6th Man of the Year"],
       "clues": [
-        "He was the 9th overall pick in the 2022 NBA Draft out of Baylor University.",
-        "He is famous for his frequently changing hair colors and elite defensive versatility.",
-        "He made headlines across the league for shooting his free throws with only one hand.",
-        "After years of being a fan favorite in San Antonio, he was traded to the East Coast in 2026.",
-        "He is the defensive-minded forward who recently joined the New York Knicks."
+        "He averaged 11.4 points and 6.5 rebounds while playing elite defense during the 2024-25 season.",
+        "College: Baylor; Draft Year: 2022",
+        "He was the youngest player in franchise history to record a 20-point, 10-rebound, and 5-assist game.",
+        "He was the primary defensive partner for generational rookie Victor Wembanyama.",
+        "He plays Forward for the New York Knicks"
       ]
     },
     "nfl": {
       "answer": "Darius Slayton",
       "accolades": ["5th Round Pick"],
       "clues": [
-        "He was a track star in college who ran a blazing 4.39 40-yard dash.",
-        "He is a pure deep threat who has led his team in receiving yards in four different seasons.",
-        "He tied for the NFL lead among rookies with 8 touchdown catches in 2019.",
-        "He has spent his entire career in New York as the primary vertical threat for Daniel Jones.",
-        "He is a veteran wide receiver for the New York Giants."
+        "During the 2025 season, he recorded 37 receptions for 538 yards and averaged over 14 yards per catch.",
+        "College: Auburn; Draft Year: 2019",
+        "In 2023, he caught an 80-yard touchdown, the longest for his franchise in nearly a decade.",
+        "He spent his early career as a teammate of legendary running back Saquon Barkley.",
+        "He plays Wide Receiver for the New York Giants"
       ]
     }
   },
@@ -391,68 +284,68 @@
       "answer": "Salvador Perez",
       "accolades": ["9x All-Star", "5x Gold Glove", "4x Silver Slugger"],
       "clues": [
-        "Until 2025 he held the MLB record for most home runs in a single season by a primary catcher (48).",
-        "A native of Venezuela, he is a World Series MVP and 5-time Gold Glove winner.",
-        "In 2025, he reached the massive milestones of 300 career home runs and 1,000 RBI.",
-        "He is the longest-tenured player on his team and the primary mentor to Bobby Witt Jr.",
-        "He is a franchise legend who has spent his entire career with the Kansas City Royals."
+        "In his age-35 season (2025), he hit 30 home runs and recorded 100 RBI.",
+        "Nationality: Venezuelan; He was once gifted a custom-made golden chest protector by his team to celebrate his defensive excellence.",
+        "In 2021, he broke the all-time record for most home runs in a season by a primary catcher (48).",
+        "He won a championship in 2015 while playing alongside All-Star center fielder Lorenzo Cain.",
+        "He plays Catcher for the Kansas City Royals"
       ]
     },
     "nba": {
       "answer": "Dyson Daniels",
       "accolades": ["2025 NBA Steals Leader", "Most Improved Player"],
       "clues": [
-        "He was the 8th overall pick in the 2022 NBA Draft out of the NBA Global Academy.",
-        "He is a 6'7\" perimeter defender known for having some of the fastest hands in the league.",
-        "In 2025, he set a franchise record by recording at least one steal in 62 consecutive games.",
-        "He was the centerpiece of the trade that sent Dejounte Murray to the New Orleans Pelicans.",
-        "He is the star defensive guard and 'Steals Leader' for the Atlanta Hawks."
+        "He averaged 14.1 points and a league-leading 3.0 steals per game during the 2024-25 season.",
+        "College: N/A (G-League); Draft Year: 2022",
+        "In 2025, he set a modern NBA record by recording at least one steal in 62 consecutive games.",
+        "He was the centerpiece of the trade that sent All-Star guard Dejounte Murray to the Pelicans.",
+        "He plays Guard for the Atlanta Hawks"
       ]
     },
     "nfl": {
       "answer": "Drake Maye",
       "accolades": ["2025 Most Improved Player", "3rd Overall Pick"],
       "clues": [
-        "He was the 3rd overall pick in the 2024 NFL Draft out of North Carolina.",
-        "He stands 6'4\" with a rocket arm and was the 2025 runner-up for NFL MVP.",
-        "In 2025, he became only the eighth QB in history to post a 70% completion rate with 4,000+ yards.",
-        "In Week 17 of 2025, he became the first QB ever to have 5 TDs and a 90% completion rate in a game.",
-        "He is the face of the franchise for the New England Patriots."
+        "In 2025, he led the NFL in Passer Rating (113.5) and completion percentage (72.0%).",
+        "College: North Carolina; Draft Year: 2024",
+        "In 2025, he became the first rookie in NFL history to record 5 passing touchdowns and a 90% completion rate in a game.",
+        "He spent his first year in the league learning from veteran teammate Jacoby Brissett.",
+        "He plays Quarterback for the New England Patriots"
       ]
     }
   },
   "2026-03-18": {
     "mlb": {
       "answer": "Drake Baldwin",
-      "accolades": ["2024 Futures Game Selection"],
+      "accolades": ["2025 NL Rookie of the Year"],
       "clues": [
-        "He was a 3rd-round pick in 2022 and quickly became a top-ranked catching prospect.",
-        "An American from Wisconsin, he led the International League in walks and RBI for catchers in 2025.",
-        "He was the 2025 Rookie of the Year runner-up after a stellar breakout season.",
-        "He took over the starting catching duties for a perennial playoff contender in the NL East.",
-        "He is the star young catcher for the Atlanta Braves."
+        "In his 2025 debut, he hit .274 with 19 home runs and led all NL rookies with 80 RBI.",
+        "Nationality: American; He was a state-leading high school hockey player who credits his reflexes to his time on the ice.",
+        "He became one of only seven rookie catchers in MLB history to reach 35 extra-base hits and 78+ RBI.",
+        "He made his debut as the Opening Day starter due to an injury to veteran All-Star Sean Murphy.",
+        "He plays Catcher for the Atlanta Braves"
       ]
     },
     "nba": {
       "answer": "Peyton Watson",
       "accolades": ["2022 1st Round Pick"],
       "clues": [
-        "He was a five-star recruit and a one-and-done standout at UCLA.",
-        "He is an elite 'shot-blocking wing' known for his massive 7-foot wingspan.",
-        "He moved into a permanent starting role in 2025, averaging nearly 15 points per game.",
-        "He is a key defensive stopper in the starting lineup alongside Nikola Jokić.",
-        "He is a rising star forward for the Denver Nuggets."
+        "He averaged 14.9 points and 1.2 blocks per game while becoming a permanent starter in 2024-25.",
+        "College: UCLA; Draft Year: 2022",
+        "He recorded a chase-down block in 2025 that was voted a top-10 play of the season by the league's media.",
+        "He won a championship in 2023 as a rookie while playing behind veteran Jeff Green.",
+        "He plays Forward for the Denver Nuggets"
       ]
     },
     "nfl": {
       "answer": "Kyle Monangai",
       "accolades": ["First-Team All-Big Ten"],
       "clues": [
-        "He was a 7th-round pick in 2025 who set multiple rushing records at Rutgers.",
-        "He is a powerful 'downhill' runner known for his durability and vision.",
-        "In 2025, he became a surprise breakout star, rushing for over 780 yards as a rookie.",
-        "He famously claims to have a photographic memory and can recite 20-digit numbers on command.",
-        "He is a breakout running back for the Chicago Bears."
+        "In his rookie 2025 season, he recorded 783 rushing yards and 5 touchdowns.",
+        "College: Rutgers; Draft Year: 2025",
+        "In 2023, he became the first player from his college to lead the Big Ten in rushing yards.",
+        "He played his senior year of college alongside star linebacker Max Melton.",
+        "He plays Running Back for the Chicago Bears"
       ]
     }
   },
@@ -461,33 +354,33 @@
       "answer": "Adolis García",
       "accolades": ["2023 World Series MVP", "2x All-Star"],
       "clues": [
-        "He defected from his home country to play in Japan before making his MLB debut.",
-        "A native of Cuba, he is known by the fan-favorite nickname 'El Bombi.'",
-        "He holds the MLB record for most RBI in a single postseason (22).",
-        "He was the cornerstone and emotional leader of his franchise's first World Series title in 2023.",
-        "He is the star right fielder for the Texas Rangers."
+        "In the 2025 season, he recorded 19 home runs and 75 RBI while playing 135 games.",
+        "Nationality: Cuban; He is known for his elite arm strength and was the first player from his province to win an MLB MVP award.",
+        "He holds the MLB record for the most RBI in a single postseason (22 in 2023).",
+        "He won a championship in 2023 while playing alongside superstar shortstop Corey Seager.",
+        "He plays Right Field for the Texas Rangers"
       ]
     },
     "nba": {
       "answer": "Lonzo Ball",
-      "accolades": ["2nd Overall Pick", "All-Defensive 2nd Team"],
+      "accolades": ["2017 2nd Overall Pick"],
       "clues": [
-        "He was the 2nd overall pick in the 2017 NBA Draft and a high school legend in California.",
-        "He is an elite floor general known for his 'full-court' passing and perimeter defense.",
-        "In 2024, he played his first professional game in over 1,000 days due to major knee surgeries.",
-        "He is part of a famous basketball family and formerly launched his own signature shoe brand.",
-        "After a comeback season in Chicago, he was traded to the Cleveland Cavaliers in late 2025."
+        "In his 2024-25 comeback, he played 35 games and averaged 7.6 points before being traded.",
+        "College: UCLA; Draft Year: 2017",
+        "In 2024, he became the first player in medical history to return to professional sports after a successful cartilage transplant.",
+        "He was the starting point guard for the Lakers alongside forward Brandon Ingram.",
+        "He plays Guard for the Cleveland Cavaliers"
       ]
     },
     "nfl": {
       "answer": "Nico Collins",
       "accolades": ["2025 Pro Bowl", "2023 breakout star"],
       "clues": [
-        "He was a 3rd-round pick in 2021 who played college football at Michigan.",
-        "He is a massive 6'4\" receiver who specializes in 'contested catches' and deep-ball production.",
-        "In 2025, he recorded his third consecutive 1,000-yard receiving campaign.",
-        "He is the primary deep threat and #1 target for star quarterback C.J. Stroud.",
-        "He is the star wide receiver for the Houston Texans."
+        "In the 2025 season, he recorded 71 receptions for 1,117 yards and 6 touchdowns.",
+        "College: Michigan; Draft Year: 2021",
+        "He is one of only three players in the past decade to record multiple seasons with an average of 3.0 yards per route run.",
+        "He entered the league as a rookie catching passes from quarterback Davis Mills.",
+        "He plays Wide Receiver for the Houston Texans"
       ]
     }
   },
@@ -496,33 +389,33 @@
       "answer": "Tyler O'Neill",
       "accolades": ["2x Gold Glove"],
       "clues": [
-        "His father was a professional bodybuilder who won the 'Mr. Canada' title in 1975.",
-        "A native of Canada, he is widely considered one of the strongest players in the major leagues.",
-        "He is a 2-time Gold Glove winner in left field known for his rare combination of power and speed.",
-        "In late 2025, he joined a new team to provide veteran right-handed power in the AL East.",
-        "He is a powerhouse outfielder currently playing for the Baltimore Orioles."
+        "In an injury-shortened 2025 season, he hit 9 home runs in just 54 games.",
+        "Nationality: Canadian; He is an accomplished classically trained pianist who plays to improve his finger dexterity for hitting.",
+        "In 2021, he became the first player in his team's history to record 30 home runs and 15 stolen bases while winning a Gold Glove.",
+        "He patrolled the outfield in St. Louis alongside All-Star center fielder Harrison Bader.",
+        "He plays Outfield for the Baltimore Orioles"
       ]
     },
     "nba": {
       "answer": "Kevin Love",
       "accolades": ["2016 NBA Champion", "5x All-Star"],
       "clues": [
-        "He is the nephew of Beach Boys co-founder Mike Love and once led the NBA in rebounding.",
-        "He is a 5-time All-Star who famously won the 2016 NBA Championship in Cleveland.",
-        "He is one of the best 'outlet passers' in basketball history, often throwing full-court strikes.",
-        "He spent the final years of his career as a veteran mentor and 'three-point' threat in South Beach.",
-        "He is a legendary veteran forward who recently finished his career with the Miami Heat."
+        "He averaged 6.7 points and 5.8 rebounds per game during his final NBA season in 2024-25.",
+        "College: UCLA; Draft Year: 2008",
+        "He once recorded 31 points and 31 rebounds in a single game, the first 30/30 game in the NBA in decades.",
+        "He won a title in 2016 while playing alongside superstar point guard Kyrie Irving.",
+        "He plays Forward/Center for the Miami Heat"
       ]
     },
     "nfl": {
       "answer": "Sam Darnold",
       "accolades": ["3rd Overall Pick", "14-Win Season"],
       "clues": [
-        "He was the 3rd overall pick in the 2018 Draft and was a multi-sport star at USC.",
-        "In 2024, he revitalized his career by tying a Vikings franchise record with 35 touchdowns.",
-        "In 2025, he signed a $100 million contract to lead a new team in the Pacific Northwest.",
-        "He is the first QB in NFL history to record 14 wins in his first season with a new team.",
-        "He is the current starting quarterback for the Seattle Seahawks."
+        "In 2025, he recorded 4,048 passing yards and 25 touchdowns while leading his team to 14 wins.",
+        "College: USC; Draft Year: 2018",
+        "He is the first quarterback in NFL history to record 14 wins in his first season with a new team.",
+        "He was drafted #3 overall to a franchise where he handed off to veteran back Saquon Barkley.",
+        "He plays Quarterback for the Seattle Seahawks"
       ]
     }
   }
