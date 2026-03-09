@@ -100,6 +100,7 @@ function initGame(sport, config) {
 
   guessBtn.addEventListener('click', submitGuess);
   shareBtn.addEventListener('click', shareResult);
+  shareBtn.textContent = navigator.share ? 'Share Result' : 'Copy Result';
 
   // ────────────────────────────────────────────
   function normalize(str) {
@@ -221,6 +222,9 @@ function initGame(sport, config) {
       state.result = 'win';
       state.guessesUsed = state.wrongGuesses.length + 1;
       state.locked = true;
+      if (pips[state.wrongGuesses.length]) pips[state.wrongGuesses.length].classList.add('correct');
+      guessBtn.textContent = '✓ Correct!';
+      guessBtn.classList.add('correct');
       card.classList.add('win');
       triggerWinSweep();
       recordGuesses(state.guessesUsed);
@@ -316,6 +320,7 @@ function initGame(sport, config) {
       endSub.textContent = `The answer was ${config.answer}.`;
     }
     emojiGrid.textContent = buildEmojiGrid(result);
+    setTimeout(() => endState.focus(), 50);
   }
 
   function buildEmojiGrid(result) {
@@ -325,30 +330,38 @@ function initGame(sport, config) {
     return wrong.join('');
   }
 
-  function shareResult() {
+  function buildShareText() {
     const sportEmoji = { mlb: '⚾', nba: '🏀', nfl: '🏈' }[sport];
     const sportName = sport.toUpperCase();
     const date = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
     const emoji = buildEmojiGrid(state.result);
     const scoreText = state.result === 'win'
       ? `Got it in ${state.guessesUsed}/${MAX_GUESSES}!`
-      : 'Couldn\'t crack it!';
-
-    const text = [
+      : "Couldn't crack it!";
+    return [
       `StatMask ${sportEmoji} ${sportName} — ${date}`,
       emoji,
       scoreText,
-      `Play: statmask.com/${sport}`
+      `statmask.com/${sport}`
     ].join('\n');
+  }
 
-    navigator.clipboard.writeText(text).then(() => {
-      shareBtn.textContent = '✓ Copied!';
-      shareBtn.classList.add('copied');
-      setTimeout(() => {
-        shareBtn.textContent = '🔗 Share Result';
-        shareBtn.classList.remove('copied');
-      }, 2000);
-    });
+  function shareResult() {
+    const text = buildShareText();
+    const resetBtn = () => {
+      shareBtn.textContent = navigator.share ? 'Share Result' : 'Copy Result';
+      shareBtn.classList.remove('copied');
+    };
+
+    if (navigator.share) {
+      navigator.share({ text }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(text).then(() => {
+        shareBtn.textContent = '✓ Copied!';
+        shareBtn.classList.add('copied');
+        setTimeout(resetBtn, 3000);
+      });
+    }
   }
 
   // ────────────────────────────────────────────

@@ -521,6 +521,7 @@ main {
 .guess-btn:hover { opacity: 0.9; }
 .guess-btn:active { transform: scale(0.98); }
 .guess-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+.guess-btn.correct { background: var(--green); pointer-events: none; }
 
 /* ── WRONG GUESSES LIST ── */
 .wrong-guesses {
