@@ -541,6 +541,26 @@ main {
   cursor: pointer;
   transition: background 0.1s;
   border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.autocomplete-item-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.autocomplete-team {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .autocomplete-item:last-child { border-bottom: none; }

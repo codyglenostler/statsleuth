@@ -35,7 +35,8 @@ function initGame(sport, config) {
   const streakDisplay = document.getElementById('streak-display');
 
   // ── Pre-normalize player list once for fast search ──
-  const normalizedPlayers = config.players.map(p => normalize(p));
+  // Players may be "Name|Team" — only normalize the name portion
+  const normalizedPlayers = config.players.map(p => normalize(p.split('|')[0]));
 
   // ── Set blurred mystery name ──
   if (mysteryName) mysteryName.textContent = config.answer;
@@ -142,11 +143,21 @@ function initGame(sport, config) {
   function renderDropdown(matches, q) {
     if (!matches.length) { closeDropdown(); return; }
     dropdown.innerHTML = '';
-    matches.forEach((name, i) => {
+    matches.forEach((playerStr, i) => {
+      const [name, team] = playerStr.split('|');
       const item = document.createElement('div');
       item.className = 'autocomplete-item';
       item.dataset.index = i;
-      highlightInto(item, name, q);
+      const nameEl = document.createElement('span');
+      nameEl.className = 'autocomplete-item-name';
+      highlightInto(nameEl, name, q);
+      item.appendChild(nameEl);
+      if (team) {
+        const teamEl = document.createElement('span');
+        teamEl.className = 'autocomplete-team';
+        teamEl.textContent = team;
+        item.appendChild(teamEl);
+      }
       item.addEventListener('mousedown', (e) => {
         e.preventDefault();
         selectPlayer(name);
@@ -185,7 +196,7 @@ function initGame(sport, config) {
     } else if (e.key === 'Enter') {
       e.preventDefault();
       if (idx >= 0 && dropdown._matches[idx]) {
-        selectPlayer(dropdown._matches[idx]);
+        selectPlayer(dropdown._matches[idx].split('|')[0]);
       } else {
         submitGuess();
       }
@@ -227,8 +238,8 @@ function initGame(sport, config) {
     const guess = searchInput.value.trim();
     if (!guess) return;
 
-    // Check if in player list (accent-insensitive)
-    const matched = config.players.find(p => normalize(p) === normalize(guess));
+    // Check if in player list (accent-insensitive) — entries may be "Name|Team"
+    const matched = config.players.find(p => normalize(p.split('|')[0]) === normalize(guess));
     if (!matched) {
       shake(searchInput);
       searchInput.placeholder = 'Player not found — check spelling';
@@ -236,7 +247,7 @@ function initGame(sport, config) {
       return;
     }
 
-    const matchedName = matched.replace(/\s*\(\d{4}-[\w]+\)$/, '').trim();
+    const matchedName = matched.split('|')[0].replace(/\s*\(\d{4}-[\w]+\)$/, '').trim();
 
     // Already guessed?
     if (state.wrongGuesses.includes(matchedName)) {
