@@ -110,7 +110,7 @@ function initGame(sport, config) {
   skipBtn.addEventListener('click', () => {
     skipBtn.classList.contains('give-up-mode') ? giveUp() : skipGuess();
   });
-  const isMobile = navigator.maxTouchPoints > 0;
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   shareBtn.addEventListener('click', shareResult);
   shareBtn.textContent = isMobile && navigator.share ? 'Share Result' : 'Copy Result';
 
