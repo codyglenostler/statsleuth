@@ -41,9 +41,12 @@ function initGame(sport, config) {
   if (playerReveal) playerReveal.textContent = config.answer;
   const accoladesEl = document.getElementById('player-accolades-reveal');
   if (accoladesEl && config.accolades) {
-    accoladesEl.innerHTML = config.accolades
-      .map(a => `<span class="accolade-badge">${a}</span>`)
-      .join('');
+    config.accolades.forEach(a => {
+      const span = document.createElement('span');
+      span.className = 'accolade-badge';
+      span.textContent = a;
+      accoladesEl.appendChild(span);
+    });
   }
 
   // ── Restore state on load ──
@@ -138,7 +141,7 @@ function initGame(sport, config) {
       const item = document.createElement('div');
       item.className = 'autocomplete-item';
       item.dataset.index = i;
-      item.innerHTML = highlight(name, q);
+      highlightInto(item, name, q);
       item.addEventListener('mousedown', (e) => {
         e.preventDefault();
         selectPlayer(name);
@@ -151,12 +154,14 @@ function initGame(sport, config) {
     positionDropdown();
   }
 
-  function highlight(name, q) {
+  function highlightInto(el, name, q) {
     const idx = name.toLowerCase().indexOf(q.toLowerCase());
-    if (idx === -1) return name;
-    return name.slice(0, idx) +
-      `<mark>${name.slice(idx, idx + q.length)}</mark>` +
-      name.slice(idx + q.length);
+    if (idx === -1) { el.textContent = name; return; }
+    el.appendChild(document.createTextNode(name.slice(0, idx)));
+    const mark = document.createElement('mark');
+    mark.textContent = name.slice(idx, idx + q.length);
+    el.appendChild(mark);
+    el.appendChild(document.createTextNode(name.slice(idx + q.length)));
   }
 
   function onSearchKeydown(e) {
@@ -524,7 +529,15 @@ function initGame(sport, config) {
   function updateAvgDisplay(history) {
     if (!navAvg || !history.length) return;
     const avg = (history.reduce((sum, h) => sum + h.guesses, 0) / history.length).toFixed(1);
-    navAvg.innerHTML = `<span class="nav-avg-label">Avg Guess</span><span class="nav-avg-value">${avg}</span>`;
+    navAvg.innerHTML = '';
+    const label = document.createElement('span');
+    label.className = 'nav-avg-label';
+    label.textContent = 'Avg Guess';
+    const value = document.createElement('span');
+    value.className = 'nav-avg-value';
+    value.textContent = avg;
+    navAvg.appendChild(label);
+    navAvg.appendChild(value);
   }
 }
 
