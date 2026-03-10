@@ -406,8 +406,8 @@ function initGame(sport, config) {
       endScore.className = 'end-state-score win-text';
       endSub.textContent = 'Nice work, sleuth. Come back tomorrow.';
       if (streakDisplay) {
-        if (streak.count >= 2) {
-          streakDisplay.textContent = `🔥 ${streak.count}-day streak`;
+        if (streak.count >= 1) {
+          streakDisplay.textContent = streak.count === 1 ? '🔥 1-day streak' : `🔥 ${streak.count}-day streak`;
           streakDisplay.style.display = '';
         } else {
           streakDisplay.style.display = 'none';
@@ -440,7 +440,7 @@ function initGame(sport, config) {
       const clueWord = state.guessesUsed === 1 ? 'clue' : 'clues';
       lines.push(`I unmasked today's ${sportLabel} Player in ${state.guessesUsed} ${clueWord}.`);
       lines.push(emoji);
-      if (streak.count >= 2) lines.push(`🔥 ${streak.count}-day streak`);
+      if (streak.count >= 1) lines.push(`🔥 ${streak.count}-day streak`);
     } else {
       lines.push(`I couldn't unmask today's ${sportLabel} Player.`);
       lines.push(emoji);
@@ -573,7 +573,7 @@ function initGame(sport, config) {
     if (!navStreak) return;
     const streak = loadStreak();
     navStreak.innerHTML = '';
-    if (streak.count >= 2) {
+    if (streak.count >= 1) {
       const label = document.createElement('span');
       label.className = 'nav-streak-label';
       label.textContent = 'Streak';
