@@ -115,7 +115,7 @@ function initGame(sport, config) {
 
   // ────────────────────────────────────────────
   function normalize(str) {
-    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\./g, '');
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[.']/g, '');
   }
 
   // Handles "Last, First" → "first last" so both formats match
