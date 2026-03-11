@@ -5956,7 +5956,7 @@ const MLB_PLAYERS = [
 // "Ryan McBroom (2019-2021)",
 // "Ryan McGuire (1997-2002)",
 "Ryan McKenna",
-"Ryan McMahon|- - -",
+"Ryan McMahon|New York Yankees",
 // "Ryan Meisinger (2018-2021)",
 // "Ryan Merritt (2016-2017)",
 "Ryan Miller",

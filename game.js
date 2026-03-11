@@ -225,6 +225,21 @@ function initGame(sport, config) {
     }, 350);
   }
 
+  function positionDropdown() {
+    const inputRect = searchInput.getBoundingClientRect();
+    const spaceBelow = window.innerHeight - inputRect.bottom;
+    const maxH = 200;
+    if (spaceBelow < maxH && inputRect.top > spaceBelow) {
+      dropdown.style.top = '';
+      dropdown.style.bottom = 'calc(100% + 2px)';
+      dropdown.style.maxHeight = Math.min(inputRect.top - 8, maxH) + 'px';
+    } else {
+      dropdown.style.top = '';
+      dropdown.style.bottom = '';
+      dropdown.style.maxHeight = Math.min(spaceBelow - 8, maxH) + 'px';
+    }
+  }
+
   function closeDropdown() {
     dropdown.classList.remove('open');
     dropdown.innerHTML = '';
