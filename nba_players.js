@@ -771,7 +771,7 @@ const NBA_PLAYERS = [
 "Enrique Freeman|Indiana Pacers",
 // "Eric Bledsoe (2011-2022)",
 // "Eric Dawson (2012-2012)",
-"Eric Gordon|Phoenix Suns",
+"Eric Gordon|Philadelphia 76ers",
 // "Eric Maynor (2010-2014)",
 // "Eric Mika (2020-2020)",
 // "Eric Montross (2000-2002)",
