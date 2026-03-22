@@ -141,11 +141,34 @@ def generate_entry(client: anthropic.Anthropic, player: str, sport: str) -> dict
             messages = [
                 {"role": "user", "content": user_msg},
                 {"role": "assistant", "content": response.content},
+                {"role": "user", "content": "Continue."},
             ]
         else:
             break
 
+    # Try to extract JSON from the response
     for block in response.content:
+        if block.type == "text" and block.text.strip():
+            return extract_json(block.text)
+
+    # No JSON text found — the model likely finished searching but didn't output JSON.
+    # Send a follow-up turn asking it to produce the final answer.
+    messages = [
+        {"role": "user", "content": user_msg},
+        {"role": "assistant", "content": response.content},
+        {"role": "user", "content": "Now output the JSON with the clues based on your research."},
+    ]
+
+    with client.messages.stream(
+        model="claude-opus-4-6",
+        max_tokens=2048,
+        system=SYSTEM_PROMPT,
+        tools=[{"type": "web_search_20260209", "name": "web_search"}],
+        messages=messages,
+    ) as stream:
+        followup = stream.get_final_message()
+
+    for block in followup.content:
         if block.type == "text" and block.text.strip():
             return extract_json(block.text)
 
