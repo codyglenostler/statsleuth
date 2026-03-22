@@ -106,12 +106,59 @@ def pick_player(pool: list, used: set) -> str:
     return random.choice(available)
 
 
-def extract_json(text: str) -> dict:
-    """Parse JSON from model response, stripping any accidental markdown fences."""
+def extract_json_from_text(text: str) -> dict | None:
+    """Try to extract a JSON object from text, handling markdown fences and surrounding prose."""
     text = text.strip()
-    text = re.sub(r'^```(?:json)?\s*', '', text)
-    text = re.sub(r'\s*```$', '', text)
-    return json.loads(text.strip())
+    if not text:
+        return None
+
+    # Try direct parse first
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+
+    # Strip markdown fences
+    stripped = re.sub(r'^```(?:json)?\s*', '', text)
+    stripped = re.sub(r'\s*```$', '', stripped).strip()
+    if stripped:
+        try:
+            return json.loads(stripped)
+        except json.JSONDecodeError:
+            pass
+
+    # Search for JSON object in the text using brace matching
+    start = text.find('{')
+    if start != -1:
+        depth = 0
+        for i in range(start, len(text)):
+            if text[i] == '{':
+                depth += 1
+            elif text[i] == '}':
+                depth -= 1
+                if depth == 0:
+                    try:
+                        return json.loads(text[start:i + 1])
+                    except json.JSONDecodeError:
+                        break
+
+    return None
+
+
+def get_all_text(response) -> str:
+    """Concatenate all text blocks from a response."""
+    parts = []
+    for block in response.content:
+        if block.type == "text" and block.text.strip():
+            parts.append(block.text)
+    return "\n".join(parts)
+
+
+def describe_response(response) -> str:
+    """Return a debug summary of response content blocks."""
+    block_types = [block.type for block in response.content]
+    text_blocks = [block.text[:100] for block in response.content if block.type == "text"]
+    return f"stop_reason={response.stop_reason}, blocks={block_types}, text_previews={text_blocks}"
 
 
 def generate_entry(client: anthropic.Anthropic, player: str, sport: str) -> dict:
@@ -126,19 +173,18 @@ def generate_entry(client: anthropic.Anthropic, player: str, sport: str) -> dict
 
     # Loop to handle pause_turn (server-side tool search iteration limit)
     while True:
-        with client.messages.stream(
+        response = client.messages.create(
             model="claude-sonnet-4-6",
             max_tokens=2048,
             system=SYSTEM_PROMPT,
             tools=[{"type": "web_search_20260209", "name": "web_search"}],
             messages=messages,
-        ) as stream:
-            response = stream.get_final_message()
+        )
 
         if response.stop_reason in ("end_turn", "stop_sequence"):
             break
         elif response.stop_reason == "pause_turn":
-            # Server hit its internal search iteration limit — continue from where it left off
+            # Server hit its internal search iteration limit — continue
             messages = [
                 {"role": "user", "content": user_msg},
                 {"role": "assistant", "content": response.content},
@@ -147,33 +193,38 @@ def generate_entry(client: anthropic.Anthropic, player: str, sport: str) -> dict
         else:
             break
 
-    # Try to extract JSON from the response
-    for block in response.content:
-        if block.type == "text" and block.text.strip():
-            return extract_json(block.text)
+    # Try to extract JSON from any text in the response
+    all_text = get_all_text(response)
+    result = extract_json_from_text(all_text)
+    if result:
+        return result
 
-    # No JSON text found — the model likely finished searching but didn't output JSON.
-    # Send a follow-up turn asking it to produce the final answer.
-    messages = [
-        {"role": "user", "content": user_msg},
-        {"role": "assistant", "content": response.content},
-        {"role": "user", "content": "Now output the JSON with the clues based on your research."},
-    ]
+    # No JSON found — log what we got and try a follow-up WITHOUT web search
+    # so the model just outputs JSON from what it already researched
+    print(f"[debug: no JSON in response: {describe_response(response)}] ", end='', flush=True)
 
-    with client.messages.stream(
+    followup = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=2048,
         system=SYSTEM_PROMPT,
-        tools=[{"type": "web_search_20260209", "name": "web_search"}],
-        messages=messages,
-    ) as stream:
-        followup = stream.get_final_message()
+        messages=[
+            {"role": "user", "content": user_msg},
+            {"role": "assistant", "content": response.content},
+            {"role": "user", "content": (
+                "You have completed your research. Now output ONLY the JSON object "
+                "with the clues. No explanation, no markdown fences, just the raw JSON."
+            )},
+        ],
+        # No tools — force pure text output
+    )
 
-    for block in followup.content:
-        if block.type == "text" and block.text.strip():
-            return extract_json(block.text)
+    all_text = get_all_text(followup)
+    result = extract_json_from_text(all_text)
+    if result:
+        return result
 
-    raise ValueError(f"No JSON text block returned for {player}")
+    print(f"[debug: follow-up also failed: {describe_response(followup)}] ", end='', flush=True)
+    raise ValueError(f"No valid JSON returned for {player}")
 
 
 # ── Main ───────────────────────────────────────────────────────────────────
@@ -205,7 +256,7 @@ def main() -> None:
             player = pick_player(featured[sport], used[sport])
             print(f"  {sport.upper()}: {player} ... ", end='', flush=True)
 
-            max_retries = 5
+            max_retries = 3
             for attempt in range(max_retries):
                 try:
                     entry = generate_entry(client, player, sport)
@@ -214,13 +265,21 @@ def main() -> None:
                     print("✓")
                     time.sleep(5)  # pace requests to avoid rate limits
                     break
-                except anthropic.RateLimitError as e:
+                except anthropic.RateLimitError:
                     wait = 60 * (attempt + 1)
                     print(f"rate limited, retrying in {wait}s ... ", end='', flush=True)
                     time.sleep(wait)
+                except (ValueError, json.JSONDecodeError) as e:
+                    if attempt < max_retries - 1:
+                        print(f"retry ({e}) ... ", end='', flush=True)
+                        time.sleep(10)
+                    else:
+                        print(f"✗  FAILED after {max_retries} attempts: {e}", file=sys.stderr)
+                        del schedule[date_key]
+                        save_json(SCHEDULE_FILE, dict(sorted(schedule.items())))
+                        sys.exit(1)
                 except Exception as e:
                     print(f"✗  FAILED: {e}", file=sys.stderr)
-                    # Remove the incomplete day and save what we have before exiting
                     del schedule[date_key]
                     save_json(SCHEDULE_FILE, dict(sorted(schedule.items())))
                     sys.exit(1)
