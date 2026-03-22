@@ -2,7 +2,9 @@
   "2026-03-09": {
     "mlb": {
       "answer": "Patrick Bailey",
-      "accolades": ["Gold Glove Finalist"],
+      "accolades": [
+        "Gold Glove Finalist"
+      ],
       "clues": [
         "In 2025, he set personal bests with 135 games played and led all MLB catchers with 19 Defensive Runs Saved.",
         "Nationality: American; He is a rare switch-hitting catcher who became the first at his position in franchise history to record a 'Splash Hit' home run into the cove.",
@@ -13,7 +15,9 @@
     },
     "nba": {
       "answer": "Buddy Hield",
-      "accolades": ["2020 3-Point Contest Champion"],
+      "accolades": [
+        "2020 3-Point Contest Champion"
+      ],
       "clues": [
         "In the 2024-25 season, he appeared in all 82 games and averaged 11.1 points and 2.5 made three-pointers.",
         "He ranks second all-time in three-pointers made during the first eight seasons of an NBA career.",
@@ -24,7 +28,9 @@
     },
     "nfl": {
       "answer": "Dontayvion Wicks",
-      "accolades": ["2023 5th Round Pick"],
+      "accolades": [
+        "2023 5th Round Pick"
+      ],
       "clues": [
         "During the 2025 season, he recorded 30 receptions for 332 yards and 2 touchdowns.",
         "In 2023, he recorded a first down on 74.4% of his catches, the highest rate among all NFL rookies that year.",
@@ -37,7 +43,11 @@
   "2026-03-10": {
     "mlb": {
       "answer": "Julio Rodriguez",
-      "accolades": ["2022 AL Rookie of the Year", "2x All-Star", "Gold Glove"],
+      "accolades": [
+        "2022 AL Rookie of the Year",
+        "2x All-Star",
+        "Gold Glove"
+      ],
       "clues": [
         "In the 2025 season, he recorded 35 home runs and 42 stolen bases, finishing as a top-5 AL MVP candidate.",
         "Nationality: Dominican; He signed a franchise-record 12-year extension before completing his first full MLB season, the largest contract commitment in Mariners history.",
@@ -48,7 +58,9 @@
     },
     "nba": {
       "answer": "Kelly Olynyk",
-      "accolades": ["12-Year NBA Veteran"],
+      "accolades": [
+        "12-Year NBA Veteran"
+      ],
       "clues": [
         "In his 20 starts during the 2024-25 season, he averaged 10.7 points, 5.9 rebounds, and 3.6 assists.",
         "In 2017, he scored 26 points in a Game 7 win, which remains the highest-scoring Game 7 performance by a bench player in NBA history.",
@@ -59,7 +71,10 @@
     },
     "nfl": {
       "answer": "Zach Ertz",
-      "accolades": ["1x Super Bowl Champ", "3x Pro Bowl"],
+      "accolades": [
+        "1x Super Bowl Champ",
+        "3x Pro Bowl"
+      ],
       "clues": [
         "In the 2025 season, he recorded 50 receptions for 504 yards and 4 touchdowns.",
         "Until last season, he held the NFL record for most receptions by a tight end in a single season (116).",
@@ -72,7 +87,9 @@
   "2026-03-11": {
     "mlb": {
       "answer": "CJ Abrams",
-      "accolades": ["2024 All-Star"],
+      "accolades": [
+        "2024 All-Star"
+      ],
       "clues": [
         "In 2025, he recorded 19 home runs and 31 stolen bases while leading his team in runs scored with 92.",
         "Nationality: American; He was a champion competitive swimmer in high school before choosing to pursue a professional baseball career.",
@@ -83,7 +100,10 @@
     },
     "nba": {
       "answer": "Mike Conley",
-      "accolades": ["1x All-Star", "NBA Sportsmanship Award"],
+      "accolades": [
+        "1x All-Star",
+        "NBA Sportsmanship Award"
+      ],
       "clues": [
         "In his 18th NBA season (2024-25), he averaged 8.2 points and 4.5 assists per game.",
         "He played 12 consecutive seasons and over 800 games before receiving his first ever technical foul.",
@@ -94,7 +114,10 @@
     },
     "nfl": {
       "answer": "James Cook",
-      "accolades": ["2025 NFL Rushing Leader", "2x Pro Bowl"],
+      "accolades": [
+        "2025 NFL Rushing Leader",
+        "2x Pro Bowl"
+      ],
       "clues": [
         "In 2025, he finished with 1,621 yards and 12 touchdowns on 307 carries.",
         "In 2025, he became the first player for his franchise to win the rushing title in nearly 50 years.",
@@ -107,7 +130,10 @@
   "2026-03-12": {
     "mlb": {
       "answer": "Cal Raleigh",
-      "accolades": ["2024 Platinum Glove", "Silver Slugger"],
+      "accolades": [
+        "2024 Platinum Glove",
+        "Silver Slugger"
+      ],
       "clues": [
         "In the 2025 season, he batted .247 with 14 stolen bases.",
         "Nationality: American; He is the first switch-hitting catcher in MLB history to record 30+ home runs in three different seasons.",
@@ -118,7 +144,9 @@
     },
     "nba": {
       "answer": "Eric Gordon",
-      "accolades": ["2017 6th Man of the Year"],
+      "accolades": [
+        "2017 6th Man of the Year"
+      ],
       "clues": [
         "He averaged 6.8 points and shot 41% from three-point range during the 2024-25 season.",
         "In 2017, he became the first player in franchise history to win the NBA Sixth Man of the Year award.",
@@ -129,7 +157,10 @@
     },
     "nfl": {
       "answer": "AJ Barner",
-      "accolades": ["2024 National Champion (Michigan)", "1x Super Bowl Champ"],
+      "accolades": [
+        "2024 National Champion (Michigan)",
+        "1x Super Bowl Champ"
+      ],
       "clues": [
         "During the 2025 season, he recorded 52 receptions for 519 yards and 6 touchdowns.",
         "He set a franchise record for a rookie tight end by recording a catch in 13 consecutive games.",
@@ -142,7 +173,10 @@
   "2026-03-13": {
     "mlb": {
       "answer": "Jarren Duran",
-      "accolades": ["2024 All-Star Game MVP", "2024 All-MLB Second Team"],
+      "accolades": [
+        "2024 All-Star Game MVP",
+        "2024 All-MLB Second Team"
+      ],
       "clues": [
         "In 2025, he hit .256 with 13 triples, leading MLB in that category for the second consecutive season.",
         "Nationality: American (Mexican and Puerto Rican heritage); He played three seasons as a second baseman at Long Beach State before being drafted and converted into an outfielder.",
@@ -153,7 +187,9 @@
     },
     "nba": {
       "answer": "Pat Connaughton",
-      "accolades": ["2021 NBA Champion"],
+      "accolades": [
+        "2021 NBA Champion"
+      ],
       "clues": [
         "He averaged 5.3 points per game in 41 appearances during the 2024-25 season.",
         "He is one of the few athletes to be drafted into both the NBA and MLB, having been selected by the Baltimore Orioles.",
@@ -164,7 +200,9 @@
     },
     "nfl": {
       "answer": "Jalen McMillan",
-      "accolades": ["2024 3rd Round Pick"],
+      "accolades": [
+        "2024 3rd Round Pick"
+      ],
       "clues": [
         "In the 2025 season, he finished with 178 receiving yards and 0 touchdowns.",
         "He ranked second among all NFL rookies in receiving touchdowns during the 2024 season.",
@@ -177,7 +215,9 @@
   "2026-03-14": {
     "mlb": {
       "answer": "Ryan McMahon",
-      "accolades": ["All-Star"],
+      "accolades": [
+        "All-Star"
+      ],
       "clues": [
         "In 2025, he hit 20 home runs for the fifth consecutive season despite a mid-year trade.",
         "Nationality: American; He was a star high school quarterback who chose baseball over multiple D1 football scholarship offers.",
@@ -188,7 +228,10 @@
     },
     "nba": {
       "answer": "Jalen Williams",
-      "accolades": ["2025 All-NBA 3rd Team", "All-Star"],
+      "accolades": [
+        "2025 All-NBA 3rd Team",
+        "All-Star"
+      ],
       "clues": [
         "In the 2024-25 season, he averaged 21.6 points and led his team to a conference-leading 68 wins.",
         "He is the only player in NBA history to shoot over 50% from the field and 40% from 3 as a rookie starter.",
@@ -199,7 +242,10 @@
     },
     "nfl": {
       "answer": "Philip Rivers",
-      "accolades": ["8x Pro Bowl", "NFL Record 240 Consecutive Starts"],
+      "accolades": [
+        "8x Pro Bowl",
+        "NFL Record 240 Consecutive Starts"
+      ],
       "clues": [
         "In his brief 2025 stint, he started 3 games and threw for 544 yards.",
         "He holds the NFL record for the most consecutive starts by a quarterback to begin a career (240).",
@@ -212,7 +258,10 @@
   "2026-03-15": {
     "mlb": {
       "answer": "Geraldo Perdomo",
-      "accolades": ["2025 Silver Slugger", "All-Star"],
+      "accolades": [
+        "2025 Silver Slugger",
+        "All-Star"
+      ],
       "clues": [
         "In 2025, he finished 5th in all of MLB in fWAR, trailing only the league's top MVPs.",
         "Nationality: Dominican; He is a switch-hitter who became the first player in his franchise history to record a grand slam for his first career home run.",
@@ -223,7 +272,9 @@
     },
     "nba": {
       "answer": "Jonas Valančiūnas",
-      "accolades": ["All-Eurocup First Team"],
+      "accolades": [
+        "All-Eurocup First Team"
+      ],
       "clues": [
         "He averaged 8.8 points and 5.2 rebounds in a career-low 18.8 minutes per game in 2024-25.",
         "In 2021, he recorded 35 points and 25 rebounds in a single game, the first such feat in the NBA since 1976.",
@@ -234,7 +285,10 @@
     },
     "nfl": {
       "answer": "Marvin Harrison Jr.",
-      "accolades": ["4th Overall Pick", "2x Biletnikoff Award"],
+      "accolades": [
+        "4th Overall Pick",
+        "2x Biletnikoff Award"
+      ],
       "clues": [
         "In his rookie 2024 season, he recorded over 800 receiving yards and 8 touchdowns.",
         "He is the first player in the history of his college to record multiple 1,000-yard receiving seasons.",
@@ -247,7 +301,9 @@
   "2026-03-16": {
     "mlb": {
       "answer": "Brent Rooker",
-      "accolades": ["2x All-Star"],
+      "accolades": [
+        "2x All-Star"
+      ],
       "clues": [
         "In the 2025 season, he hit .262 with 30 home runs and 89 RBI.",
         "Nationality: American; He won the SEC Triple Crown in 2017 while playing at Mississippi State.",
@@ -258,7 +314,9 @@
     },
     "nba": {
       "answer": "Jeremy Sochan",
-      "accolades": ["Big 12 6th Man of the Year"],
+      "accolades": [
+        "Big 12 6th Man of the Year"
+      ],
       "clues": [
         "He averaged 11.4 points and 6.5 rebounds while playing elite defense during the 2024-25 season.",
         "He was the youngest player in franchise history to record a 20-point, 10-rebound, and 5-assist game.",
@@ -269,7 +327,9 @@
     },
     "nfl": {
       "answer": "Darius Slayton",
-      "accolades": ["5th Round Pick"],
+      "accolades": [
+        "5th Round Pick"
+      ],
       "clues": [
         "During the 2025 season, he recorded 37 receptions for 538 yards and averaged over 14 yards per catch.",
         "In 2023, he caught an 80-yard touchdown, the longest for his franchise in nearly a decade.",
@@ -282,7 +342,11 @@
   "2026-03-17": {
     "mlb": {
       "answer": "Salvador Perez",
-      "accolades": ["9x All-Star", "5x Gold Glove", "4x Silver Slugger"],
+      "accolades": [
+        "9x All-Star",
+        "5x Gold Glove",
+        "4x Silver Slugger"
+      ],
       "clues": [
         "In his age-35 season (2025), he hit 30 home runs and recorded 100 RBI.",
         "Nationality: Venezuelan; He was once gifted a custom-made golden chest protector by his team to celebrate his defensive excellence.",
@@ -293,7 +357,10 @@
     },
     "nba": {
       "answer": "Dyson Daniels",
-      "accolades": ["2025 NBA Steals Leader", "Most Improved Player"],
+      "accolades": [
+        "2025 NBA Steals Leader",
+        "Most Improved Player"
+      ],
       "clues": [
         "He averaged 14.1 points and a league-leading 3.0 steals per game during the 2024-25 season.",
         "In 2025, he set a modern NBA record by recording at least one steal in 62 consecutive games.",
@@ -304,7 +371,10 @@
     },
     "nfl": {
       "answer": "Drake Maye",
-      "accolades": ["2025 Most Improved Player", "3rd Overall Pick"],
+      "accolades": [
+        "2025 Most Improved Player",
+        "3rd Overall Pick"
+      ],
       "clues": [
         "In 2025, he led the NFL in Passer Rating (113.5) and completion percentage (72.0%).",
         "In 2025, he became the first rookie in NFL history to record 5 passing touchdowns and a 90% completion rate in a game.",
@@ -317,7 +387,9 @@
   "2026-03-18": {
     "mlb": {
       "answer": "Drake Baldwin",
-      "accolades": ["2025 NL Rookie of the Year"],
+      "accolades": [
+        "2025 NL Rookie of the Year"
+      ],
       "clues": [
         "In his 2025 debut, he hit .274 with 19 home runs and led all NL rookies with 80 RBI.",
         "Nationality: American; He was a state-leading high school hockey player who credits his reflexes to his time on the ice.",
@@ -328,7 +400,9 @@
     },
     "nba": {
       "answer": "Peyton Watson",
-      "accolades": ["2022 1st Round Pick"],
+      "accolades": [
+        "2022 1st Round Pick"
+      ],
       "clues": [
         "He is averaging 14.9 points and 1.2 blocks per game while becoming a consistent starter in the 2025-26 season.",
         "He recorded a chase-down block in 2025 that was voted a top-10 play of the season by the league's media.",
@@ -339,7 +413,9 @@
     },
     "nfl": {
       "answer": "Kyle Monangai",
-      "accolades": ["First-Team All-Big Ten"],
+      "accolades": [
+        "First-Team All-Big Ten"
+      ],
       "clues": [
         "In his rookie 2025 season, he recorded 783 rushing yards and 5 touchdowns.",
         "In 2023, he became the first player from his college to lead the Big Ten in rushing yards.",
@@ -352,7 +428,10 @@
   "2026-03-19": {
     "mlb": {
       "answer": "Adolis García",
-      "accolades": ["2023 World Series MVP", "2x All-Star"],
+      "accolades": [
+        "2023 World Series MVP",
+        "2x All-Star"
+      ],
       "clues": [
         "In the 2025 season, he recorded 19 home runs and 75 RBI while playing 135 games.",
         "Nationality: Cuban; He is known for his elite arm strength and was the first player from his province to win an MLB MVP award.",
@@ -363,7 +442,9 @@
     },
     "nba": {
       "answer": "Lonzo Ball",
-      "accolades": ["2017 2nd Overall Pick"],
+      "accolades": [
+        "2017 2nd Overall Pick"
+      ],
       "clues": [
         "In his 2024-25 comeback, he played 35 games and averaged 7.6 points before being traded.",
         "In 2024, he became the first player in medical history to return to professional sports after a successful cartilage transplant.",
@@ -374,7 +455,10 @@
     },
     "nfl": {
       "answer": "Nico Collins",
-      "accolades": ["2025 Pro Bowl", "2023 breakout star"],
+      "accolades": [
+        "2025 Pro Bowl",
+        "2023 breakout star"
+      ],
       "clues": [
         "In the 2025 season, he recorded 71 receptions for 1,117 yards and 6 touchdowns.",
         "He is one of only three players in the past decade to record multiple seasons with an average of 3.0 yards per route run.",
@@ -387,7 +471,9 @@
   "2026-03-20": {
     "mlb": {
       "answer": "Tyler O'Neill",
-      "accolades": ["2x Gold Glove"],
+      "accolades": [
+        "2x Gold Glove"
+      ],
       "clues": [
         "In an injury-shortened 2025 season, he hit 9 home runs in just 54 games.",
         "Nationality: Canadian; He is an accomplished classically trained pianist who plays to improve his finger dexterity for hitting.",
@@ -398,7 +484,10 @@
     },
     "nba": {
       "answer": "Kevin Love",
-      "accolades": ["2016 NBA Champion", "5x All-Star"],
+      "accolades": [
+        "2016 NBA Champion",
+        "5x All-Star"
+      ],
       "clues": [
         "He averaged 6.7 points and 5.8 rebounds per game during the 2024-25 season.",
         "He once recorded 31 points and 31 rebounds in a single game, the first 30/30 game in the NBA in decades.",
@@ -409,13 +498,343 @@
     },
     "nfl": {
       "answer": "Sam Darnold",
-      "accolades": ["3rd Overall Pick", "14-Win Season"],
+      "accolades": [
+        "3rd Overall Pick",
+        "14-Win Season"
+      ],
       "clues": [
         "In 2025, he recorded 4,048 passing yards and 25 touchdowns while leading his team to 14 wins.",
         "He is the first quarterback in NFL history to record 14 wins in his first season with a new team.",
         "College: USC; Draft Year: 2018",
         "He was drafted #3 overall to a franchise where he handed off to veteran back Saquon Barkley.",
         "He plays Quarterback for the Seattle Seahawks"
+      ]
+    }
+  },
+  "2026-03-21": {
+    "mlb": {
+      "answer": "Shohei Ohtani",
+      "accolades": [
+        "2025 NL MVP",
+        "2024 NL MVP",
+        "2025 NL Silver Slugger"
+      ],
+      "clues": [
+        "In the 2025 MLB season, he hit 55 home runs with a 1.014 OPS and scored 146 runs, breaking a modern-day franchise record set in 1930.",
+        "Nationality: Japan; He was also a competitive swimmer in high school, and his coach said he had the ability to be an Olympic swimmer.",
+        "In 2024, he became the first player in Major League Baseball history to record 50 home runs and 50 stolen bases in a single season, finishing with 54 HR and 59 SB.",
+        "He and Walker Buehler won the 2024 World Series together, where Buehler recorded the final strikeout in Game 5 to clinch the title against the Yankees.",
+        "He plays Designated Hitter for the Los Angeles Dodgers"
+      ]
+    },
+    "nba": {
+      "answer": "LeBron James",
+      "accolades": [
+        "4x NBA MVP",
+        "4x NBA Finals MVP",
+        "4x NBA Champion"
+      ],
+      "clues": [
+        "In the 2024-25 NBA season, he averaged 24.4 points, 8.2 assists, and 7.8 rebounds per game across 75 games.",
+        "He is the NBA's all-time leading scorer, surpassing Kareem Abdul-Jabbar's record in February 2023, and the first player in league history to reach 40,000 career points in March 2024.",
+        "College: None (drafted out of St. Vincent-St. Mary High School); Draft Year: 2003",
+        "He and D'Angelo Russell helped lead a late-season surge in 2023-24, going 23-10 down the stretch to reach the playoffs. Russell was later traded and now plays for the Dallas Mavericks.",
+        "He plays Forward for the Los Angeles Lakers"
+      ]
+    },
+    "nfl": {
+      "answer": "Patrick Mahomes",
+      "accolades": [
+        "3x Super Bowl Champion",
+        "3x Super Bowl MVP",
+        "2x NFL MVP"
+      ],
+      "clues": [
+        "In the 2025 NFL season, he threw for 3,587 yards and 22 touchdowns while adding a career-high 422 rushing yards and 5 rushing touchdowns.",
+        "He became the fastest quarterback to reach 250 career passing touchdowns in just 116 games, beating Aaron Rodgers' previous record of 121 games.",
+        "College: Texas Tech; Draft Year: 2017",
+        "He and Tyreek Hill combined for one of the NFL's most dominant QB-WR duos, winning Super Bowl LIV together with a dramatic comeback against the 49ers. Hill was later traded to the Dolphins in 2022.",
+        "He plays Quarterback for the Kansas City Chiefs"
+      ]
+    }
+  },
+  "2026-03-22": {
+    "mlb": {
+      "answer": "Juan Soto",
+      "accolades": [
+        "4x All-Star",
+        "6x Silver Slugger Award",
+        "2019 World Series Champion"
+      ],
+      "clues": [
+        "In 2025, he batted .263/.396/.525 with a career-high 43 home runs, 105 RBI, and led the National League with 127 walks.",
+        "Nationality: Dominican Republic; He is known for his signature batter's box routine called the 'Shuffle,' a hip-swaying, dirt-swiping move he developed as a minor leaguer.",
+        "He is the only player in MLB history to reach 1,000 hits, 200 home runs, and 800 walks before his 27th birthday.",
+        "He and Stephen Strasburg won the 2019 World Series together with the Nationals, where Strasburg earned World Series MVP honors going 5-0 with a 1.98 ERA across six postseason appearances.",
+        "He plays Right Field for the New York Mets"
+      ]
+    },
+    "nba": {
+      "answer": "Stephen Curry",
+      "accolades": [
+        "2x NBA MVP",
+        "4x NBA Champion",
+        "2022 NBA Finals MVP"
+      ],
+      "clues": [
+        "In the 2024-25 season, he averaged 24.5 points, 6.0 assists, and 4.4 rebounds per game across 70 games.",
+        "He became the first player in NBA history to make 4,000 career three-pointers, reaching the milestone in March 2025, and holds the all-time record for career threes made.",
+        "College: Davidson; Draft Year: 2009",
+        "He and Kevin Durant won back-to-back NBA championships together in 2017 and 2018, with Durant earning Finals MVP honors both years.",
+        "He plays Point Guard for the Golden State Warriors"
+      ]
+    },
+    "nfl": {
+      "answer": "Josh Allen",
+      "accolades": [
+        "2024 NFL MVP",
+        "4x Pro Bowl",
+        "2x Second-Team All-Pro"
+      ],
+      "clues": [
+        "In 2025, he threw for 4,269 total yards with 41 total touchdowns and a career-low 8 turnovers.",
+        "He is the all-time leading postseason rusher among quarterbacks and surpassed Thurman Thomas to become the franchise's all-time leader in rushing touchdowns.",
+        "College: Wyoming; Draft Year: 2018",
+        "He and Stefon Diggs combined for 445 receptions and 37 touchdowns over four seasons together, with Diggs leading the NFL in receptions (127) and receiving yards (1,535) in their first year as teammates in 2020.",
+        "He plays Quarterback for the Buffalo Bills"
+      ]
+    }
+  },
+  "2026-03-23": {
+    "mlb": {
+      "answer": "Mookie Betts",
+      "accolades": [
+        "2018 AL MVP",
+        "4x World Series Champion",
+        "6x Gold Glove"
+      ],
+      "clues": [
+        "In 2025, he hit 20 home runs and drove in 82 RBI while playing his first full season at shortstop, tying for the lead among all MLB shortstops with 17 Defensive Runs Saved.",
+        "Nationality: American; He is also a professional ten-pin bowler for the PBA and once bowled a perfect game at the World Series of Bowling in 2017.",
+        "In 2018, he became the only player in MLB history to win the World Series, Gold Glove, Silver Slugger, batting title, and MVP in the same season.",
+        "He won the 2018 World Series alongside slugger J.D. Martinez, who went on to play for five different teams over the next six seasons.",
+        "He plays Shortstop for the Los Angeles Dodgers"
+      ]
+    },
+    "nba": {
+      "answer": "Nikola Jokić",
+      "accolades": [
+        "3x NBA MVP",
+        "2023 Finals MVP",
+        "7x All-NBA"
+      ],
+      "clues": [
+        "In the 2024-25 season, he averaged 29.6 points, 12.7 rebounds, and 10.2 assists, becoming the first player to average a triple-double while shooting 41.7% from three.",
+        "He is the lowest-drafted MVP in NBA history, selected 41st overall, and the first second-round pick ever to win the award.",
+        "College: N/A (International); Draft Year: 2014",
+        "He won the 2023 NBA Championship alongside Kentavious Caldwell-Pope, who left the following offseason to sign with the Orlando Magic.",
+        "He plays Center for the Denver Nuggets"
+      ]
+    },
+    "nfl": {
+      "answer": "Lamar Jackson",
+      "accolades": [
+        "2x NFL MVP",
+        "2016 Heisman Trophy",
+        "4x Pro Bowl"
+      ],
+      "clues": [
+        "In the 2025 season, he threw for 2,549 yards with 21 touchdowns and 7 interceptions across 13 starts.",
+        "In 2024, he became the first player in NFL history to record over 4,000 passing yards and 900 rushing yards in a single season while throwing 41 touchdowns with only 4 interceptions.",
+        "College: Louisville; Draft Year: 2018",
+        "He spent three seasons connecting with receiver Marquise 'Hollywood' Brown, a childhood friend from South Florida who was traded to Arizona after the 2021 season.",
+        "He plays Quarterback for the Baltimore Ravens"
+      ]
+    }
+  },
+  "2026-03-24": {
+    "mlb": {
+      "answer": "Rafael Devers",
+      "accolades": [
+        "2018 World Series Champion",
+        "3x All-Star",
+        "2x Silver Slugger"
+      ],
+      "clues": [
+        "In 2025, he slashed .252/.372/.479 with 35 home runs, 109 RBI, and 112 walks across 163 games between two teams.",
+        "Nationality: Dominican Republic; His nickname is 'Carita,' meaning 'baby face,' because he was always happy and smiling as a child.",
+        "He became the youngest player in Red Sox franchise history to reach 200 career home runs, doing so at just 27 years old and surpassing Jim Rice's record.",
+        "He won the 2018 World Series alongside shortstop Xander Bogaerts, with whom he spent six seasons and calls his 'baseball bestie.'",
+        "He plays Designated Hitter for the San Francisco Giants"
+      ]
+    },
+    "nba": {
+      "answer": "Jayson Tatum",
+      "accolades": [
+        "2024 NBA Champion",
+        "6x All-Star",
+        "2x Olympic Gold Medalist"
+      ],
+      "clues": [
+        "In the 2024-25 season, he averaged 26.8 points, 8.7 rebounds, and 6.0 assists per game across 72 games.",
+        "He holds the NBA record for most made three-pointers before turning 27, with 1,502 career threes.",
+        "College: Duke; Draft Year: 2017",
+        "He won the 2024 NBA championship alongside Kristaps Porzingis, who returned from a 38-day absence to score 20 points in Game 1 of the Finals before eventually being traded to Golden State.",
+        "He plays Forward for the Boston Celtics"
+      ]
+    },
+    "nfl": {
+      "answer": "Ja'Marr Chase",
+      "accolades": [
+        "2024 Receiving Triple Crown",
+        "2021 Offensive Rookie of the Year",
+        "First-Team All-Pro"
+      ],
+      "clues": [
+        "In the 2025 season, he recorded 125 receptions for 1,412 yards and 8 touchdowns on a career-high 185 targets across 16 games.",
+        "In 2024, he became just the fifth player in NFL history to win the receiving triple crown, leading the league with 127 receptions, 1,708 yards, and 17 touchdowns.",
+        "College: LSU; Draft Year: 2021",
+        "He and fellow wide receiver Tyler Boyd formed a dominant trio alongside Tee Higgins that helped reach Super Bowl LVI, before Boyd departed for the Tennessee Titans.",
+        "He plays Wide Receiver for the Cincinnati Bengals"
+      ]
+    }
+  },
+  "2026-03-25": {
+    "mlb": {
+      "answer": "Bobby Witt Jr.",
+      "accolades": [
+        "2024 Gold Glove Award",
+        "2024 Silver Slugger Award",
+        "2024 AL All-Star"
+      ],
+      "clues": [
+        "In 2025, he hit .295 with 184 hits and 47 doubles, both leading all of MLB, while adding 23 home runs and 38 stolen bases.",
+        "Nationality: American; His father pitched in the Majors for 16 seasons, and together they are the highest-drafted father-son duo in MLB history.",
+        "He became the first player in MLB history to hit 20 home runs and steal 30 bases in each of his first four Major League seasons.",
+        "He and Andrew Benintendi were teammates in 2022 before Benintendi was traded to the Yankees at the deadline as a first-time All-Star hitting .320.",
+        "He plays Shortstop for the Kansas City Royals"
+      ]
+    },
+    "nba": {
+      "answer": "Luka Dončić",
+      "accolades": [
+        "5x All-NBA First Team",
+        "6x NBA All-Star",
+        "2018-19 Rookie of the Year"
+      ],
+      "clues": [
+        "In 2024-25, he averaged 28.2 points, 8.2 rebounds, and 7.7 assists per game across 50 games before being traded midseason.",
+        "He became the youngest EuroLeague MVP in history at age 19 and led the NBA in scoring in 2023-24, becoming the first European player to do so.",
+        "College: None (Real Madrid); Draft Year: 2018",
+        "He and Kyrie Irving led Dallas to the 2024 NBA Finals, combining to average 59.4 points and 12.8 assists per game in the Western Conference Finals.",
+        "He plays Guard for the Los Angeles Lakers"
+      ]
+    },
+    "nfl": {
+      "answer": "Justin Jefferson",
+      "accolades": [
+        "2022 AP Offensive Player of the Year",
+        "2x First-Team All-Pro",
+        "4x Pro Bowl"
+      ],
+      "clues": [
+        "In 2025, he recorded 84 receptions for 1,048 receiving yards and two touchdowns across the regular season.",
+        "He broke Randy Moss's NFL record for the most receiving yards in a player's first six seasons, surpassing 8,375 yards.",
+        "College: LSU; Draft Year: 2020",
+        "He and Adam Thielen formed a dynamic receiving duo from 2020 to 2022, combining for over 2,000 receiving yards in the 2021 season before Thielen departed for the Panthers.",
+        "He plays Wide Receiver for the Minnesota Vikings"
+      ]
+    }
+  },
+  "2026-03-26": {
+    "mlb": {
+      "answer": "Corey Seager",
+      "accolades": [
+        "2x World Series MVP",
+        "2016 NL Rookie of the Year",
+        "5x All-Star"
+      ],
+      "clues": [
+        "In 2025, he slashed .271/.373/.487 with 21 home runs and 50 RBI in just 102 games, posting a career-high 13% walk rate.",
+        "Nationality: American; His older brother Kyle was a longtime third baseman for the Seattle Mariners, and in 2016 they became the first brothers in MLB history to each hit 25+ home runs in the same season.",
+        "He is one of only four players in MLB history to win the World Series MVP award twice, and the first to win it in both the American League and National League.",
+        "He formed the starting double-play tandem alongside Marcus Semien for four seasons, winning a World Series together in 2023 before Semien was traded to the Mets.",
+        "He plays Shortstop for the Texas Rangers"
+      ]
+    },
+    "nba": {
+      "answer": "Anthony Edwards",
+      "accolades": [
+        "4x All-Star",
+        "2x All-NBA Second Team"
+      ],
+      "clues": [
+        "In the 2024-25 season, he averaged 27.6 points, 5.7 rebounds, and 4.5 assists while drilling 4.1 three-pointers per game.",
+        "He became the third-youngest player in NBA history to reach 10,000 career points, trailing only LeBron James and Kevin Durant, and the youngest ever to make 1,000 career three-pointers.",
+        "College: Georgia; Draft Year: 2020",
+        "He and Karl-Anthony Towns led their team to the 2024 Western Conference Finals before Towns was traded to the Knicks that offseason.",
+        "He plays Guard for the Minnesota Timberwolves"
+      ]
+    },
+    "nfl": {
+      "answer": "CeeDee Lamb",
+      "accolades": [
+        "First-Team All-Pro (2023)",
+        "5x Pro Bowl"
+      ],
+      "clues": [
+        "In the 2025 season, he recorded 75 receptions for 1,077 receiving yards and 3 touchdowns across 14 games.",
+        "In 2023, he became the first player in NFL history to record at least 10 catches for 150+ yards in three consecutive games, and broke his franchise's single-season records for receptions and receiving yards.",
+        "College: Oklahoma; Draft Year: 2020",
+        "He was mentored by veteran wideout Amari Cooper during his first two NFL seasons before Cooper was traded to Cleveland in 2022, after which he became the undisputed number one receiver.",
+        "He plays Wide Receiver for the Dallas Cowboys"
+      ]
+    }
+  },
+  "2026-03-27": {
+    "mlb": {
+      "answer": "Freddie Freeman",
+      "accolades": [
+        "2020 NL MVP",
+        "2024 World Series MVP",
+        "3x World Series Champion"
+      ],
+      "clues": [
+        "In 2025, he batted .295 with 24 home runs and 90 RBI, and was selected to start the All-Star Game for the fifth time in his career.",
+        "Nationality: Canadian-American; He always wears a long-sleeved shirt during games to honor his mother, who passed away from melanoma when he was 10.",
+        "In Game 1 of the 2024 World Series, he hit the first walk-off grand slam in World Series history, and went on to win World Series MVP after homering in four consecutive Fall Classic games.",
+        "He and Ozzie Albies formed a dominant duo on the right side of the infield together in Atlanta, winning the 2021 World Series over the Houston Astros in six games.",
+        "He plays First Base for the Los Angeles Dodgers"
+      ]
+    },
+    "nba": {
+      "answer": "Shai Gilgeous-Alexander",
+      "accolades": [
+        "2024-25 NBA MVP",
+        "2025 NBA Finals MVP",
+        "2024-25 NBA Scoring Champion"
+      ],
+      "clues": [
+        "In 2024-25, he averaged 32.7 points, 6.4 assists, and 5.0 rebounds per game, leading the NBA in total points with 2,484 and recording 13 games with 40 or more points.",
+        "He became only the fourth player in NBA history to win the regular season MVP, Finals MVP, and scoring title all in the same season, and the first Canadian to win Finals MVP.",
+        "College: Kentucky; Draft Year: 2018",
+        "He and Chris Paul were backcourt partners during the 2019-20 season, with Paul serving as his mentor and helping lead their team to a surprise playoff appearance before Paul was traded the following offseason.",
+        "He plays Guard for the Oklahoma City Thunder"
+      ]
+    },
+    "nfl": {
+      "answer": "Saquon Barkley",
+      "accolades": [
+        "2024 NFL Offensive Player of the Year",
+        "2018 NFL Offensive Rookie of the Year",
+        "Super Bowl LIX Champion"
+      ],
+      "clues": [
+        "In the 2025 regular season, he rushed for 1,140 yards and 7 touchdowns on 280 carries across 16 games.",
+        "In 2024, he became the ninth player in NFL history to rush for 2,000 yards in a single season, finishing with 2,005 regular-season yards and setting the all-time record for combined regular season and postseason rushing yards.",
+        "College: Penn State; Draft Year: 2018",
+        "He and Daniel Jones were teammates in New York for five seasons, and together they led their team to a 2022 Wild Card upset victory over the Minnesota Vikings.",
+        "He plays Running Back for the Philadelphia Eagles"
       ]
     }
   }
