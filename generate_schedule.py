@@ -14,6 +14,7 @@ import random
 import os
 import sys
 import re
+import time
 from datetime import date, timedelta
 
 import anthropic
@@ -204,14 +205,26 @@ def main() -> None:
             player = pick_player(featured[sport], used[sport])
             print(f"  {sport.upper()}: {player} ... ", end='', flush=True)
 
-            try:
-                entry = generate_entry(client, player, sport)
-                schedule[date_key][sport] = entry
-                used[sport].add(player.lower())
-                print("✓")
-            except Exception as e:
-                print(f"✗  FAILED: {e}", file=sys.stderr)
-                # Remove the incomplete day and save what we have before exiting
+            max_retries = 5
+            for attempt in range(max_retries):
+                try:
+                    entry = generate_entry(client, player, sport)
+                    schedule[date_key][sport] = entry
+                    used[sport].add(player.lower())
+                    print("✓")
+                    break
+                except anthropic.RateLimitError as e:
+                    wait = 60 * (attempt + 1)
+                    print(f"rate limited, retrying in {wait}s ... ", end='', flush=True)
+                    time.sleep(wait)
+                except Exception as e:
+                    print(f"✗  FAILED: {e}", file=sys.stderr)
+                    # Remove the incomplete day and save what we have before exiting
+                    del schedule[date_key]
+                    save_json(SCHEDULE_FILE, dict(sorted(schedule.items())))
+                    sys.exit(1)
+            else:
+                print(f"✗  FAILED: rate limit exceeded after {max_retries} retries", file=sys.stderr)
                 del schedule[date_key]
                 save_json(SCHEDULE_FILE, dict(sorted(schedule.items())))
                 sys.exit(1)
