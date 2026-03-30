@@ -1779,7 +1779,6 @@ const NFL_PLAYERS = [
 // "Nick Bawden (2018-2023)",
 // "Nick Bowers (2020-2023)",
 // "Nick Boyle (2015-2022)",
-"Nick Bosa|San Francisco 49ers",
 "Nick Chubb|Houston Texans",
 // "Nick Foles (2012-2022)",
 "Nick Kallerup|Seattle Seahawks",
